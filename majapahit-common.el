@@ -129,6 +129,8 @@
      `(css-selector ((,class (:inherit ,font-lock-keyword-face))))
      `(css-property ((,class (:inherit ,font-lock-string-face))))
      `(sh-quoted-exec ((,class (:inherit ,font-lock-function-name-face))))
+
+;;;;; basic stuffs
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
      `(highlight ((,class (:foreground ,base :background ,bg3))))
      `(hl-line ((,class (:background ,bg2))))
@@ -443,7 +445,7 @@
      `(powerline-inactive2 ((,class (:background ,bg2 :foreground ,base))))
 
 ;;;;; rainbow-delimiters
-     `(rainbow-delimiters-depth-1-face ((,class :foreground ,key)))
+     `(rainbow-delimiters-depth-1-face ((,class :foreground ,key1)))
      `(rainbow-delimiters-depth-2-face ((,class :foreground ,func)))
      `(rainbow-delimiters-depth-3-face ((,class :foreground ,str)))
      `(rainbow-delimiters-depth-4-face ((,class :foreground ,green)))
