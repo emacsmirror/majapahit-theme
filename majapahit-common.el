@@ -464,6 +464,10 @@
      `(rainbow-delimiters-depth-6-face ((,class :foreground ,pth6 :bold t)))
      `(rainbow-delimiters-depth-7-face ((,class :foreground ,pth7 :bold t)))
      `(rainbow-delimiters-depth-8-face ((,class :foreground ,pth8 :bold t)))
+     `(rainbow-delimiters-depth-9-face ((,class :foreground ,green :bold t)))
+     `(rainbow-delimiters-depth-10-face ((,class :foreground ,yellow :bold t)))
+     `(rainbow-delimiters-depth-11-face ((,class :foreground ,type :bold t)))
+     `(rainbow-delimiters-depth-12-face ((,class :foreground ,pth8 :bold t)))
      `(rainbow-delimiters-unmatched-face ((,class :foreground ,war :bold t)))
 
 ;;;;; shm
