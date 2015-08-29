@@ -55,7 +55,7 @@
   (let ((class '((class color) (min-colors 89))) ;;                    
         ;;                                      DARK        LIGHT
         (base          (if (eq variant 'dark)  "#b9b9b3"  "#6e6d6c" ))
-        (cursor        (if (eq variant 'dark)  "#9c9c8c"  "#63635d" ))
+        (cursor        (if (eq variant 'dark)  "#292922"  "#63635d" ))
         (bg1           (if (eq variant 'dark)  "#2c2c25"  "#fafaf6" ))
         (bg2           (if (eq variant 'dark)  "#33332c"  "#f3f3ed" ))
         (bg3           (if (eq variant 'dark)  "#40403a"  "#e3e3da" ))
@@ -127,7 +127,7 @@
      `(font-lock-preprocessor-face ((,class (:foreground ,func))))
      `(font-lock-reference-face ((,class (:foreground ,cyan))))
      `(font-lock-string-face ((,class (:foreground ,str))))
-     `(font-lock-type-face ((,class (:foreground ,type :bold t))))
+     `(font-lock-type-face ((,class (:foreground ,type))))
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
 
