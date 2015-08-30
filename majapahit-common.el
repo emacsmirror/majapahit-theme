@@ -172,7 +172,7 @@
      `(company-scrollbar-bg ((,class (:background ,active1))))
      `(company-scrollbar-fg ((,class (:background ,yellow))))
      `(company-template-field ((,class (:inherit region))))
-     `(company-tooltip ((,class (:background ,active1 :foreground ,(if (eq variant 'dark) active1 base)))))
+     `(company-tooltip ((,class (:background ,active1 :foreground ,base))))
      `(company-tooltip-annotation ((,class (:background ,active1 :foreground ,inf))))
      `(company-tooltip-common ((,class (:background ,active1 :foreground ,type))))
      `(company-tooltip-common-selection ((,class (:background ,active1 :foreground ,(if (eq variant 'dark) keyword keyword)))))
