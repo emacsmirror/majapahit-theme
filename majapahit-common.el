@@ -93,6 +93,7 @@
         (highlight     (if (eq variant 'dark)  "#333c45"  "#efefeb" ))
         (green-bg      (if (eq variant 'dark)  "#29422d"  "#dae6d0" ))
         (red-bg        (if (eq variant 'dark)  "#512e31"  "#eed9d2" ))
+        (mkwd          (if (eq variant 'dark)  "#828b62"  "#abafab" ))
         (pth1          (if (eq variant 'dark)  "#b1b59c"  "#b1b59c" ))
         (pth2          (if (eq variant 'dark)  "#f1bc6a"  "#d79c85" ))
         (pth3          (if (eq variant 'dark)  "#4da0c4"  "#418580" ))
@@ -132,9 +133,9 @@
      `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
 
 ;;;;; extra font-locks
-     `(clojure-keyword-face ((,class (:foreground ,base :underline t :weight bold))))
+     `(clojure-keyword-face ((,class (:foreground ,mkwd :underline t :weight bold))))
      `(clojure-interop-method-face ((,class (:foreground ,bg4))))
-     `(elixir-atom-face ((,class (:foreground ,comment))))
+     `(elixir-atom-face ((,class (:foreground ,mkwd :weight bold))))
      `(c-annotation-face ((,class (:inherit ,font-lock-constant-face))))
      `(sh-heredoc ((,class (:inherit ,font-lock-doc-face))))
      `(css-selector ((,class (:inherit ,font-lock-keyword-face))))
