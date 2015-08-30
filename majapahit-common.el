@@ -93,7 +93,7 @@
         (highlight     (if (eq variant 'dark)  "#333c45"  "#efefeb" ))
         (green-bg      (if (eq variant 'dark)  "#29422d"  "#dae6d0" ))
         (red-bg        (if (eq variant 'dark)  "#512e31"  "#eed9d2" ))
-        (mkwd          (if (eq variant 'dark)  "#828b62"  "#abafab" ))
+        (mkwd          (if (eq variant 'dark)  "#898b89"  "#909193" ))
         (pth1          (if (eq variant 'dark)  "#b1b59c"  "#b1b59c" ))
         (pth2          (if (eq variant 'dark)  "#f1bc6a"  "#d79c85" ))
         (pth3          (if (eq variant 'dark)  "#4da0c4"  "#418580" ))
