@@ -172,13 +172,13 @@
      `(company-scrollbar-bg ((,class (:background ,bg2))))
      `(company-scrollbar-fg ((,class (:background ,comp))))
      `(company-template-field ((,class (:inherit region))))
-     `(company-tooltip ((,class (:background ,active2 :foreground ,(if (eq variant 'dark) active1 str)))))
+     `(company-tooltip ((,class (:background ,bg2 :foreground ,(if (eq variant 'dark) active1 str)))))
      `(company-tooltip-annotation ((,class (:background ,bg2 :foreground ,inf))))
      `(company-tooltip-common ((,class (:background ,bg2 :foreground ,base))))
-     `(company-tooltip-common-selection ((,class (:foreground ,(if (eq variant 'dark) type inf)))))
+     `(company-tooltip-common-selection ((,class (:foreground ,(if (eq variant 'dark) keyword keyword)))))
      `(company-tooltip-mouse ((,class (:inherit highlight))))
      `(company-tooltip-search ((,class (:inherit match))))
-     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) "#51808f" "#4b97a8") :bold t))))
+     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) "#51808f" "#4b97a8") :foreground "white" :bold t))))
 
 ;;;;; diff
      `(diff-added             ((,class :background nil :foreground ,green)))
