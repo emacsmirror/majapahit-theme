@@ -59,7 +59,7 @@
         (bg1           (if (eq variant 'dark)  "#2c2c25"  "#fafaf6" ))
         (bg2           (if (eq variant 'dark)  "#33332c"  "#f3f3ed" ))
         (bg3           (if (eq variant 'dark)  "#40403a"  "#e3e3da" ))
-        (bg4           (if (eq variant 'dark)  "#73736c"  "#c6c3bd" ))
+        (bg4           (if (eq variant 'dark)  "#73736c"  "#b6b3ad" ))
         (key1          (if (eq variant 'dark)  "#c5617a"  "#c5617a" ))
         (key2          (if (eq variant 'dark)  "#cf7b86"  "#cf7b86" ))
         (builtin       (if (eq variant 'dark)  "#88a087"  "#9e8464" ))
