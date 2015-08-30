@@ -132,7 +132,7 @@
      `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
 
 ;;;;; extra font-locks
-     `(clojure-keyword-face ((,class (:foreground ,green :underline t))))
+     `(clojure-keyword-face ((,class (:foreground ,base :underline t :weight bold))))
      `(clojure-interop-method-face ((,class (:foreground ,bg4))))
      `(elixir-atom-face ((,class (:foreground ,comment))))
      `(c-annotation-face ((,class (:inherit ,font-lock-constant-face))))
