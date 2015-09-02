@@ -176,10 +176,10 @@
      `(company-tooltip ((,class (:background ,active1 :foreground ,base :bold t))))
      `(company-tooltip-annotation ((,class (:foreground ,const))))
      `(company-tooltip-common ((,class (:foreground ,type))))
-     `(company-tooltip-common-selection ((,class (:background ,type :foreground ,(if (eq variant 'dark) keyword keyword)))))
+     `(company-tooltip-common-selection ((,class (:background ,org-h1-bg :foreground ,(if (eq variant 'dark) keyword keyword)))))
      ;;`(company-tooltip-mouse ((,class (:inherit highlight))))
      ;;`(company-tooltip-search ((,class (:inherit match))))
-     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) "#51808f" "#4b97a8") :foreground "#ffffff" :bold t))))
+     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) org-h1-bg org-h1-bg) :foreground "#ffffff" :bold t))))
 
 ;;;;; diff
      `(diff-added             ((,class :background nil :foreground ,green)))
