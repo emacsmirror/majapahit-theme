@@ -168,18 +168,18 @@
 ;;;;; company
      `(company-echo-common ((,class (:background ,bg1 :foreground ,base))))
      `(company-preview ((,class (:background ,bg1 :foreground ,key1))))
-     `(company-preview-common ((,class (:background ,active1 :foreground ,keyword))))
-     `(company-preview-search ((,class (:background ,active1 :foreground ,green))))
-     `(company-scrollbar-bg ((,class (:background ,active1))))
+     `(company-preview-common ((,class (:background ,active2 :foreground ,keyword))))
+     `(company-preview-search ((,class (:background ,active2 :foreground ,green))))
+     `(company-scrollbar-bg ((,class (:background ,active2))))
      `(company-scrollbar-fg ((,class (:background ,bg4))))
      `(company-template-field ((,class (:inherit region))))
-     `(company-tooltip ((,class (:background ,active1 :foreground ,base :bold t))))
+     `(company-tooltip ((,class (:background ,active2 :foreground ,base :bold t))))
      `(company-tooltip-annotation ((,class (:foreground ,const))))
      `(company-tooltip-common ((,class (:foreground ,type))))
      `(company-tooltip-common-selection ((,class (:background ,org-h1-bg :foreground ,(if (eq variant 'dark) keyword keyword)))))
      ;;`(company-tooltip-mouse ((,class (:inherit highlight))))
      ;;`(company-tooltip-search ((,class (:inherit match))))
-     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) org-h1-bg org-h1-bg) :foreground "#ffffff" :bold t))))
+     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) org-h1-bg org-h1-bg) :foreground ,const :bold t))))
 
 ;;;;; diff
      `(diff-added             ((,class :background nil :foreground ,green)))
