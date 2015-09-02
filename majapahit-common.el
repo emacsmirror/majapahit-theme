@@ -4,7 +4,7 @@
 
 ;; Author: Alexander Adhyatma
 ;; URL: http:/gitlab.com/franksn/majapahit-theme/
-;; Version: 0.1.0
+;; Version: 0.1.9
 ;;
 ;; This file is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -498,11 +498,11 @@
      `(which-key-special-key-face ((,class (:background ,func :foreground ,bg1))))
 
 ;;;;; auto-complete
-     `(ac-candidate-face ((,class (:background ,bg2 :foreground ,base))))
+     `(ac-candidate-face ((,class (:background ,active2 :foreground ,base))))
      `(ac-selection-face ((,class (:background ,type :foreground ,base))))
      `(popup-tip-face ((,class (:background ,red :foreground ,base))))
      `(popup-scroll-bar-foreground-face ((,class (:background ,type))))
-     `(popup-scroll-bar-background-face ((,class (:background ,bg1))))
+     `(popup-scroll-bar-background-face ((,class (:background ,active2))))
      `(popup-isearch-match ((,class (:background ,bg1 :foreground ,base :bold t))))
      `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
 

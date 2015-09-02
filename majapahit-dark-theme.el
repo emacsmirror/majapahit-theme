@@ -4,7 +4,7 @@
 
 ;; Author: Alexander Adhyatma
 ;; URL: http:/gitlab.com/franksn/majapahit-theme/
-;; Version: 0.1.0
+;; Version: 0.1.9
 ;;
 ;; This file is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
