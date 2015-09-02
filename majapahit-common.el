@@ -127,7 +127,7 @@
      `(font-lock-negation-char-face ((,class (:foreground ,bg4))))
      `(font-lock-preprocessor-face ((,class (:foreground ,func))))
      `(font-lock-reference-face ((,class (:foreground ,cyan))))
-     `(font-lock-string-face ((,class (:foreground ,str :weight bold))))
+     `(font-lock-string-face ((,class (:foreground ,str))))
      `(font-lock-type-face ((,class (:foreground ,type))))
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
