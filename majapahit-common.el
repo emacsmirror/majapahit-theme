@@ -188,8 +188,8 @@
      `(diff-indicator-changed ((,class :background nil :foreground ,inf)))
      `(diff-indicator-removed ((,class :background nil :foreground ,red)))
      `(diff-refine-added      ((,class :background nil :foreground ,bg4)))
-     `(diff-refine-changed    ((,class :background ,inf :foreground ,green-bg)))
-     `(diff-refine-removed    ((,class :background ,red :foreground ,red-bg)))
+     `(diff-refine-changed    ((,class :background ,green-bg :foreground ,green)))
+     `(diff-refine-removed    ((,class :background ,red-bg :foreground ,red)))
      `(diff-removed           ((,class :background nil :foreground ,red)))
 
 ;;;;; dired
