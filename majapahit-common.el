@@ -90,7 +90,7 @@
         (org-h2-bg     (if (eq variant 'dark)  "#63635a"  "#e0e4e3" ))
         (org-h3-bg     (if (eq variant 'dark)  "#73735a"  "#f3f3e1" ))
         (org-h4-bg     (if (eq variant 'dark)  "#8c8c7d"  "#f6f1e1" ))
-        (highlight     (if (eq variant 'dark)  "#333c45"  "#efefeb" ))
+        (highlight     (if (eq variant 'dark)  "#44443c"  "#efefeb" ))
         (green-bg      (if (eq variant 'dark)  "#29422d"  "#dae6d0" ))
         (red-bg        (if (eq variant 'dark)  "#512e31"  "#eed9d2" ))
         (mkwd          (if (eq variant 'dark)  "#898b89"  "#909193" ))
