@@ -64,7 +64,7 @@
         (key2          (if (eq variant 'dark)  "#c85246"  "#c85246" ))
         (builtin       (if (eq variant 'dark)  "#88a087"  "#917154" ))
         (keyword       (if (eq variant 'dark)  "#d25f76"  "#bb4b61" ))
-        (const         (if (eq variant 'dark)  "#c4beaa"  "#80a60b" ))
+        (const         (if (eq variant 'dark)  "#c4beaa"  "#927c5e" ))
         (comment       (if (eq variant 'dark)  "#73736d"  "#7c847b" ))
         (comment-bg    (if (eq variant 'dark)  "#2c2c25"  "#f3f1e9" ))
         (func          (if (eq variant 'dark)  "#d99174"  "#c97151" ))
