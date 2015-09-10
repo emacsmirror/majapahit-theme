@@ -67,7 +67,7 @@
         (const         (if (eq variant 'dark)  "#d4ceba"  "#81714d" ))
         (comment       (if (eq variant 'dark)  "#737b72"  "#7c847b" ))
         (comment-bg    (if (eq variant 'dark)  "#181812"  "#f3f3e9" ))
-        (func          (if (eq variant 'dark)  "#6bc658"  "#43743d" ))
+        (func          (if (eq variant 'dark)  "#649f58"  "#43743d" ))
         (str           (if (eq variant 'dark)  "#a9abab"  "#6b716a" ))
         (type          (if (eq variant 'dark)  "#3f858f"  "#356c7d" ))
         (comp          (if (eq variant 'dark)  "#e47376"  "#db4764" ))
@@ -76,7 +76,7 @@
         (war           (if (eq variant 'dark)  "#d99481"  "#c07d3c" ))
         (inf           (if (eq variant 'dark)  "#488e98"  "#407d8e" ))
         (suc           (if (eq variant 'dark)  "#b5c37b"  "#608b42" ))
-        (green         (if (eq variant 'dark)  "#6bc658"  "#43743d" ))
+        (green         (if (eq variant 'dark)  "#649f58"  "#43743d" ))
         (yellow        (if (eq variant 'dark)  "#efa26b"  "#b1573c" ))
         (cyan          (if (eq variant 'dark)  "#8b8b7f"  "#6b716a" ))
         (violet        (if (eq variant 'dark)  "#c5617a"  "#c5617a" ))
@@ -356,7 +356,7 @@
      `(info-title-4 ((,class (:height 1.2))))
 
 ;;;;; linum-mode
-     `(linum ((,class (:foreground ,bg2 :background ,cyan))))
+     `(linum ((,class (:foreground ,cyan :background ,bg2))))
 
 ;;;;; magit
      `(magit-blame-culprit ((,class :background ,org-h4-bg :foreground ,yellow)))
