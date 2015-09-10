@@ -68,7 +68,7 @@
         (comment       (if (eq variant 'dark)  "#73736d"  "#7c847b" ))
         (comment-bg    (if (eq variant 'dark)  "#2c2c25"  "#f3f3e9" ))
         (func          (if (eq variant 'dark)  "#d99174"  "#b1573d" ))
-        (str           (if (eq variant 'dark)  "#9e846c"  "#338071" ))
+        (str           (if (eq variant 'dark)  "#9e846c"  "#702d2e" ))
         (type          (if (eq variant 'dark)  "#51808f"  "#356c7d" ))
         (comp          (if (eq variant 'dark)  "#e47376"  "#db4764" ))
         (var           (if (eq variant 'dark)  "#b1b59c"  "#8f7952" ))
