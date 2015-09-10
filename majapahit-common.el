@@ -54,10 +54,10 @@
 (defun create-majapahit-theme (variant theme-name)
   (let ((class '((class color) (min-colors 89))) ;;                    
         ;;                                      DARK        LIGHT
-        (base          (if (eq variant 'dark)  "#cacfac"  "#4d5452" ))
+        (base          (if (eq variant 'dark)  "#b9baa7"  "#4d5452" ))
         (cursor        (if (eq variant 'dark)  "#24241e"  "#63635d" ))
         (bg1           (if (eq variant 'dark)  "#181812"  "#f3f3e9" ))
-        (bg2           (if (eq variant 'dark)  "#33332c"  "#edede3" ))
+        (bg2           (if (eq variant 'dark)  "#21211b"  "#edede3" ))
         (bg3           (if (eq variant 'dark)  "#40403a"  "#eaeae0" ))
         (bg4           (if (eq variant 'dark)  "#909087"  "#a5a093" ))
         (key1          (if (eq variant 'dark)  "#df6886"  "#bf4550" ))
@@ -74,7 +74,7 @@
         (var           (if (eq variant 'dark)  "#efa26b"  "#9e6039" ))
         (err           (if (eq variant 'dark)  "#8e6a60"  "#f1847b" ))
         (war           (if (eq variant 'dark)  "#d99481"  "#c07d3c" ))
-        (inf           (if (eq variant 'dark)  "#51808f"  "#407d8e" ))
+        (inf           (if (eq variant 'dark)  "#488e98"  "#407d8e" ))
         (suc           (if (eq variant 'dark)  "#b5c37b"  "#608b42" ))
         (green         (if (eq variant 'dark)  "#6bc658"  "#43743d" ))
         (yellow        (if (eq variant 'dark)  "#efa26b"  "#b1573c" ))
@@ -356,7 +356,7 @@
      `(info-title-4 ((,class (:height 1.2))))
 
 ;;;;; linum-mode
-     `(linum ((,class (:foreground ,cyan :background ,bg2))))
+     `(linum ((,class (:foreground ,bg2 :background ,cyan))))
 
 ;;;;; magit
      `(magit-blame-culprit ((,class :background ,org-h4-bg :foreground ,yellow)))
