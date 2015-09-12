@@ -74,7 +74,7 @@
         (var           (if (eq variant 'dark)  "#d37a60"  "#a95743" ))
         (err           (if (eq variant 'dark)  "#8e6a60"  "#f1847b" ))
         (war           (if (eq variant 'dark)  "#d99481"  "#c07d3c" ))
-        (inf           (if (eq variant 'dark)  "#768d82"  "#2d7878" ))
+        (inf           (if (eq variant 'dark)  "#768d82"  "#387280" ))
         (suc           (if (eq variant 'dark)  "#bdc79e"  "#608b42" ))
         (green         (if (eq variant 'dark)  "#adb78d"  "#467e60" ))
         (yellow        (if (eq variant 'dark)  "#d37a60"  "#b1573c" ))
