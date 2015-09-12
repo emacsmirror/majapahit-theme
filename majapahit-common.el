@@ -82,7 +82,7 @@
         (violet        (if (eq variant 'dark)  "#c5617a"  "#c5617a" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f76" ))
         (active1       (if (eq variant 'dark)  "#20201a"  "#e8e8dc" ))
-        (active2       (if (eq variant 'dark)  "#63635a"  "#edede1" ))
+        (active2       (if (eq variant 'dark)  "#63635a"  "#e5e0d7" ))
         (inactive      (if (eq variant 'dark)  "#45b0d3"  "#7eacac" ))
         (m-line-brdr   (if (eq variant 'dark)  "#4c4c42"  "#e3e3da" ))
         (org-block-bg  (if (eq variant 'dark)  "#232528"  "#d9e6dd" ))
