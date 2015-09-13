@@ -210,7 +210,7 @@
                                                        :height ,majapahit-theme-tex-height-110))))
      `(font-latex-sectioning-5-face ((,class (:inherit ,mjp-variable-pitch :foreground ,violet
                                                        :weight bold))))
-     `(font-latex-sedate-face ((,class (:foreground ,base1))))
+     `(font-latex-sedate-face ((,class (:foreground ,bg4))))
      `(font-latex-slide-title-face ((,class (:inherit (,mjp-variable-pitch font-lock-type-face)
                                                       :weight bold :height ,majapahit-theme-tex-height-130))))
      `(font-latex-string-face ((,class (:foreground ,str))))
