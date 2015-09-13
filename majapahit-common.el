@@ -77,7 +77,7 @@
   :group 'majapahit-theme)
 
 (defun create-majapahit-theme (variant theme-name)
-  (let ((class '((class color) (min-colors 89))) ;;                    
+  (let ((class '((class color) (min-colors 89))) ;;
         ;;                                      DARK        LIGHT
         (base          (if (eq variant 'dark)  "#ededd3"  "#4d5452" ))
         (cursor        (if (eq variant 'dark)  "#24241e"  "#63635d" ))
@@ -95,7 +95,7 @@
         (func          (if (eq variant 'dark)  "#adb78d"  "#3b7559" ))
         (str           (if (eq variant 'dark)  "#849f98"  "#686e67" ))
         (type          (if (eq variant 'dark)  "#768d82"  "#356c7e" ))
-        (comp          (if (eq variant 'dark)  "#e47376"  "#525056" ))
+        (comp          (if (eq variant 'dark)  "#e47376"  "#7e7b74" ))
         (var           (if (eq variant 'dark)  "#d37a60"  "#a95743" ))
         (err           (if (eq variant 'dark)  "#8e6a60"  "#f1847b" ))
         (war           (if (eq variant 'dark)  "#d99481"  "#c07d3c" ))
@@ -104,7 +104,7 @@
         (green         (if (eq variant 'dark)  "#adb78d"  "#3b7559" ))
         (yellow        (if (eq variant 'dark)  "#d37a60"  "#b1573c" ))
         (cyan          (if (eq variant 'dark)  "#8b8b7f"  "#686e67" ))
-        (violet        (if (eq variant 'dark)  "#635363"  "#5a6096" ))
+        (violet        (if (eq variant 'dark)  "#635363"  "#7e5090" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f76" ))
         (active1       (if (eq variant 'dark)  "#20201a"  "#e8e8dc" ))
         (active2       (if (eq variant 'dark)  "#63635a"  "#dbdbcb" ))
