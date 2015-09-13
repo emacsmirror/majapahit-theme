@@ -41,6 +41,11 @@
   "majapahit-theme options."
   :group 'faces)
 
+(defcustom majapahit-theme-variable-pitch t
+  "Use variable pitch for like latex markdown or org-mode"
+  :type 'boolean
+  :group 'majapahit-theme)
+
 (defcustom majapahit-theme-comment-bg t
   "Use a background for comment lines."
   :type 'boolean
@@ -49,6 +54,26 @@
 (defcustom majapahit-theme-org-height t
   "Use varying text heights for org headings."
   :type 'boolean
+  :group 'majapahit-theme)
+
+(defcustom majapahit-theme-tex-height-90 0.9
+  "Font size 90%"
+  :type 'number
+  :group 'majapahit-theme)
+
+(defcustom majapahit-theme-tex-height-110 1.1
+  "Font size 110%"
+  :type 'number
+  :group 'majapahit-theme)
+
+(defcustom majapahit-theme-tex-height-120 1.2
+  "Font size 120%"
+  :type 'number
+  :group 'majapahit-theme)
+
+(defcustom majapahit-theme-tex-height-130 1.3
+  "Font size 130%"
+  :type 'number
   :group 'majapahit-theme)
 
 (defun create-majapahit-theme (variant theme-name)
@@ -61,12 +86,12 @@
         (bg3           (if (eq variant 'dark)  "#40403a"  "#eaeae0" ))
         (bg4           (if (eq variant 'dark)  "#688d62"  "#a5a093" ))
         (key1          (if (eq variant 'dark)  "#db6b7e"  "#bf4550" ))
-        (key2          (if (eq variant 'dark)  "#bb4e62"  "#c0403d" ))
+        (key2          (if (eq variant 'dark)  "#bb4e62"  "#81664d" ))
         (builtin       (if (eq variant 'dark)  "#9e7a59"  "#8a694d" ))
         (keyword       (if (eq variant 'dark)  "#d4576f"  "#b84259" ))
         (const         (if (eq variant 'dark)  "#98a299"  "#81714d" ))
         (comment       (if (eq variant 'dark)  "#646b63"  "#7c847b" ))
-        (comment-bg    (if (eq variant 'dark)  "#181812"  "#f3f3e9" ))
+        (comment-bg    (if (eq variant 'dark)  "#181812"  "#f0f0e4" ))
         (func          (if (eq variant 'dark)  "#adb78d"  "#3b7559" ))
         (str           (if (eq variant 'dark)  "#849f98"  "#686e67" ))
         (type          (if (eq variant 'dark)  "#768d82"  "#356c7e" ))
@@ -79,7 +104,7 @@
         (green         (if (eq variant 'dark)  "#adb78d"  "#3b7559" ))
         (yellow        (if (eq variant 'dark)  "#d37a60"  "#b1573c" ))
         (cyan          (if (eq variant 'dark)  "#8b8b7f"  "#686e67" ))
-        (violet        (if (eq variant 'dark)  "#c5617a"  "#c5617a" ))
+        (violet        (if (eq variant 'dark)  "#964a8c"  "#964a8c" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f76" ))
         (active1       (if (eq variant 'dark)  "#20201a"  "#e8e8dc" ))
         (active2       (if (eq variant 'dark)  "#63635a"  "#e5e0d7" ))
@@ -102,6 +127,8 @@
         (pth6          (if (eq variant 'dark)  "#5c737c"  "#4d707d" ))
         (pth7          (if (eq variant 'dark)  "#ac907c"  "#927c5e" ))
         (pth8          (if (eq variant 'dark)  "#e47376"  "#db4764" ))
+        ;; for variable pitch
+        (mjp-variable-pitch (if majapahit-theme-variable-pitch 'variable-pitch 'default))
         )
 
     (custom-theme-set-faces
@@ -164,6 +191,32 @@
 
 ;;;;; anzu-mode
      `(anzu-mode-line ((,class (:foreground ,yellow :weight bold))))
+
+;;;;; auctex / latex-mode
+     `(font-latex-bold-face ((,class (:foreground ,comp))))
+     `(font-latex-italic-face ((,class (:foreground ,key2 :italic t))))
+     `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
+     `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
+     `(font-latex-math-face ((,class (:foreground ,builtin :weight bold))))
+     `(font-latex-sectioning-0-face ((,class (:inherit font-latex-sectioning-1-face
+                                                       :height ,majapahit-theme-tex-height-110))))
+     `(font-latex-sectioning-1-face ((,class (:inherit font-latex-sectioning-2-face
+                                                       :height ,majapahit-theme-tex-height-110))))
+     `(font-latex-sectioning-2-face ((,class (:inherit font-latex-sectioning-3-face
+                                                       :height ,majapahit-theme-tex-height-110))))
+     `(font-latex-sectioning-3-face ((,class (:inherit font-latex-sectioning-4-face
+                                                       :height ,majapahit-theme-tex-height-110))))
+     `(font-latex-sectioning-4-face ((,class (:inherit font-latex-sectioning-5-face
+                                                       :height ,majapahit-theme-tex-height-110))))
+     `(font-latex-sectioning-5-face ((,class (:inherit ,mjp-variable-pitch :foreground ,violet
+                                                       :weight bold))))
+     `(font-latex-sedate-face ((,class (:foreground ,base1))))
+     `(font-latex-slide-title-face ((,class (:inherit (,mjp-variable-pitch font-lock-type-face)
+                                                      :weight bold :height ,majapahit-theme-tex-height-130))))
+     `(font-latex-string-face ((,class (:foreground ,str))))
+     `(font-latex-subscript-face ((,class (:height ,majapahit-theme-tex-height-90))))
+     `(font-latex-superscript-face ((,class (:height ,majapahit-theme-tex-height-90))))
+     `(font-latex-warning-face ((,class (:inherit bold :foreground ,war :underline t))))
 
 ;;;;; company
      `(company-echo-common ((,class (:background ,bg1 :foreground ,base))))
@@ -509,11 +562,7 @@
 ;;;;; other, need more work
      `(ffap ((,class (:foreground ,base))))
      `(flx-highlight-face ((,class (:foreground ,comp :underline nil))))
-     `(font-latex-bold-face ((,class (:foreground ,comp))))
-     `(font-latex-italic-face ((,class (:foreground ,key2 :italic t))))
-     `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
-     `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
-     `(font-latex-string-face ((,class (:foreground ,str))))
+    `(font-latex-string-face ((,class (:foreground ,str))))
      `(icompletep-determined ((,class :foreground ,builtin)))
      `(js2-external-variable ((,class (:foreground ,comp  ))))
      `(js2-function-param ((,class (:foreground ,const))))
