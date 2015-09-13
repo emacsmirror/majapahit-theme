@@ -155,7 +155,7 @@
      `(font-lock-preprocessor-face ((,class (:foreground ,func))))
      `(font-lock-reference-face ((,class (:foreground ,cyan))))
      `(font-lock-string-face ((,class (:foreground ,str :bold t))))
-     `(font-lock-type-face ((,class (:foreground ,type))))
+     `(font-lock-type-face ((,class (:foreground ,type :italic t))))
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
 
