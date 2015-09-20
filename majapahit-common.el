@@ -100,6 +100,7 @@
         (err           (if (eq variant 'dark)  "#8e6a60"  "#f1847b" ))
         (war           (if (eq variant 'dark)  "#d99481"  "#c07d3c" ))
         (inf           (if (eq variant 'dark)  "#768d82"  "#387280" ))
+        (interop       (if (eq variant 'dark)  "#969dd9"  "#484c69" ))
         (suc           (if (eq variant 'dark)  "#bdc79e"  "#608b42" ))
         (green         (if (eq variant 'dark)  "#adb78d"  "#3b7559" ))
         (yellow        (if (eq variant 'dark)  "#d37a60"  "#b1573c" ))
@@ -161,7 +162,7 @@
 
 ;;;;; extra font-locks
      `(clojure-keyword-face ((,class (:foreground ,mkwd :underline t :weight bold))))
-     `(clojure-interop-method-face ((,class (:foreground ,yellow :weight bold))))
+     `(clojure-interop-method-face ((,class (:foreground ,interop :weight bold))))
      `(elixir-atom-face ((,class (:foreground ,mkwd :weight bold))))
      `(c-annotation-face ((,class (:inherit ,font-lock-constant-face))))
      `(sh-heredoc ((,class (:inherit ,font-lock-doc-face))))
