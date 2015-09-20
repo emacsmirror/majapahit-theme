@@ -81,8 +81,8 @@
         ;;                                      DARK        LIGHT
         (base          (if (eq variant 'dark)  "#ededd3"  "#4d5452" ))
         (cursor        (if (eq variant 'dark)  "#24241e"  "#63635d" ))
-        (bg1           (if (eq variant 'dark)  "#181a1b"  "#f3f3e9" ))
-        (bg2           (if (eq variant 'dark)  "#212223"  "#edede3" ))
+        (bg1           (if (eq variant 'dark)  "#181812"  "#f3f3e9" ))
+        (bg2           (if (eq variant 'dark)  "#21211c"  "#edede3" ))
         (bg3           (if (eq variant 'dark)  "#40403a"  "#eaeae0" ))
         (bg4           (if (eq variant 'dark)  "#575d5c"  "#a5a093" ))
         (key1          (if (eq variant 'dark)  "#db6b7e"  "#bf4550" ))
@@ -91,7 +91,7 @@
         (keyword       (if (eq variant 'dark)  "#d4576f"  "#b84259" ))
         (const         (if (eq variant 'dark)  "#98a299"  "#81714d" ))
         (comment       (if (eq variant 'dark)  "#646b63"  "#7c847b" ))
-        (comment-bg    (if (eq variant 'dark)  "#181a1b"  "#f0f0e4" ))
+        (comment-bg    (if (eq variant 'dark)  "#181812"  "#f0f0e4" ))
         (func          (if (eq variant 'dark)  "#adb78d"  "#3b7559" ))
         (str           (if (eq variant 'dark)  "#849f98"  "#686e67" ))
         (type          (if (eq variant 'dark)  "#768d82"  "#356c7e" ))
@@ -115,7 +115,7 @@
         (org-h2-bg     (if (eq variant 'dark)  "#63635a"  "#e0e4e3" ))
         (org-h3-bg     (if (eq variant 'dark)  "#73735a"  "#f3f3e1" ))
         (org-h4-bg     (if (eq variant 'dark)  "#8c8c7d"  "#f6f1e1" ))
-        (highlight     (if (eq variant 'dark)  "#44443c"  "#e8e8dc" ))
+        (highlight     (if (eq variant 'dark)  "#2a2a24"  "#e8e8dc" ))
         (green-bg      (if (eq variant 'dark)  "#7b894f"  "#d5e2cd" ))
         (red-bg        (if (eq variant 'dark)  "#512e31"  "#e3c8cc" ))
         (mkwd          (if (eq variant 'dark)  "#989584"  "#7e8083" ))
@@ -161,7 +161,7 @@
 
 ;;;;; extra font-locks
      `(clojure-keyword-face ((,class (:foreground ,mkwd :underline t :weight bold))))
-     `(clojure-interop-method-face ((,class (:foreground ,bg4))))
+     `(clojure-interop-method-face ((,class (:foreground ,green :weight bold))))
      `(elixir-atom-face ((,class (:foreground ,mkwd :weight bold))))
      `(c-annotation-face ((,class (:inherit ,font-lock-constant-face))))
      `(sh-heredoc ((,class (:inherit ,font-lock-doc-face))))
