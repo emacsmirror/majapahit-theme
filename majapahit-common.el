@@ -161,7 +161,7 @@
 
 ;;;;; extra font-locks
      `(clojure-keyword-face ((,class (:foreground ,mkwd :underline t :weight bold))))
-     `(clojure-interop-method-face ((,class (:foreground ,green :weight bold))))
+     `(clojure-interop-method-face ((,class (:foreground ,yellow :weight bold))))
      `(elixir-atom-face ((,class (:foreground ,mkwd :weight bold))))
      `(c-annotation-face ((,class (:inherit ,font-lock-constant-face))))
      `(sh-heredoc ((,class (:inherit ,font-lock-doc-face))))
