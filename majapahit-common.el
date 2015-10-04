@@ -4,7 +4,7 @@
 
 ;; Author: Alexander Adhyatma
 ;; URL: http:/gitlab.com/franksn/majapahit-theme/
-;; Version: 0.1.9
+;; Version: 0.2.0
 ;;
 ;; This file is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -81,7 +81,7 @@
         ;;                                      DARK        LIGHT
         (base          (if (eq variant 'dark)  "#ededd3"  "#4d5452" ))
         (cursor        (if (eq variant 'dark)  "#24241e"  "#63635d" ))
-        (bg1           (if (eq variant 'dark)  "#181812"  "#f3f3e9" ))
+        (bg1           (if (eq variant 'dark)  "#181512"  "#f3f3e9" ))
         (bg2           (if (eq variant 'dark)  "#21211c"  "#edede3" ))
         (bg3           (if (eq variant 'dark)  "#40403a"  "#e8e8dc" ))
         (bg4           (if (eq variant 'dark)  "#575d5c"  "#a7a991" ))
@@ -90,8 +90,8 @@
         (builtin       (if (eq variant 'dark)  "#9e7a59"  "#655e70" ))
         (keyword       (if (eq variant 'dark)  "#d4576f"  "#b84259" ))
         (const         (if (eq variant 'dark)  "#98a299"  "#8d806c" ))
-        (comment       (if (eq variant 'dark)  "#646b63"  "#7c847b" ))
-        (comment-bg    (if (eq variant 'dark)  "#181812"  "#f0f0e4" ))
+        (comment       (if (eq variant 'dark)  "#646b63"  "#979987" ))
+        (comment-bg    (if (eq variant 'dark)  "#181512"  "#f3f3e9" ))
         (func          (if (eq variant 'dark)  "#adb78d"  "#3b7559" ))
         (str           (if (eq variant 'dark)  "#849f98"  "#766b5a" ))
         (type          (if (eq variant 'dark)  "#768d82"  "#356c7e" ))
