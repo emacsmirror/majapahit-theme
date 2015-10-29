@@ -79,7 +79,7 @@
 (defun create-majapahit-theme (variant theme-name)
   (let ((class '((class color) (min-colors 89))) ;;
         ;;                                      DARK        LIGHT
-        (base          (if (eq variant 'dark)  "#ededd3"  "#4d5452" ))
+        (base          (if (eq variant 'dark)  "#e0d9c6"  "#4d5452" ))
         (cursor        (if (eq variant 'dark)  "#24241e"  "#63615d" ))
         (bg1           (if (eq variant 'dark)  "#272727"  "#f7f4de" ))
         (bg2           (if (eq variant 'dark)  "#181a1b"  "#f0e5c2" ))
@@ -108,7 +108,7 @@
         (violet        (if (eq variant 'dark)  "#635363"  "#685672" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f76" ))
         (active1       (if (eq variant 'dark)  "#20201a"  "#ebdebd" ))
-        (active2       (if (eq variant 'dark)  "#63635a"  "#dbd7cb" ))
+        (active2       (if (eq variant 'dark)  "#63635a"  "#e4d9ba" ))
         (inactive      (if (eq variant 'dark)  "#45b0d3"  "#7eacac" ))
         (m-line-brdr   (if (eq variant 'dark)  "#4c4c42"  "#e3e3da" ))
         (org-block-bg  (if (eq variant 'dark)  "#232528"  "#d9e6dd" ))
