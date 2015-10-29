@@ -80,7 +80,7 @@
   (let ((class '((class color) (min-colors 89))) ;;
         ;;                                      DARK        LIGHT
         (base          (if (eq variant 'dark)  "#ededd3"  "#4d5452" ))
-        (cursor        (if (eq variant 'dark)  "#24241e"  "#63635d" ))
+        (cursor        (if (eq variant 'dark)  "#24241e"  "#63615d" ))
         (bg1           (if (eq variant 'dark)  "#272727"  "#f7f4de" ))
         (bg2           (if (eq variant 'dark)  "#181a1b"  "#f0e5c2" ))
         (bg3           (if (eq variant 'dark)  "#4a403d"  "#ebdebd" ))
@@ -108,7 +108,7 @@
         (violet        (if (eq variant 'dark)  "#635363"  "#685672" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f76" ))
         (active1       (if (eq variant 'dark)  "#20201a"  "#ebdebd" ))
-        (active2       (if (eq variant 'dark)  "#63635a"  "#dbdbcb" ))
+        (active2       (if (eq variant 'dark)  "#63635a"  "#dbd7cb" ))
         (inactive      (if (eq variant 'dark)  "#45b0d3"  "#7eacac" ))
         (m-line-brdr   (if (eq variant 'dark)  "#4c4c42"  "#e3e3da" ))
         (org-block-bg  (if (eq variant 'dark)  "#232528"  "#d9e6dd" ))
@@ -116,7 +116,7 @@
         (org-h2-bg     (if (eq variant 'dark)  "#63635a"  "#e0e4e3" ))
         (org-h3-bg     (if (eq variant 'dark)  "#73735a"  "#f3f3e1" ))
         (org-h4-bg     (if (eq variant 'dark)  "#8c8c7d"  "#f6f1e1" ))
-        (highlight     (if (eq variant 'dark)  "#2a2a24"  "#eaead0" ))
+        (highlight     (if (eq variant 'dark)  "#2a2a24"  "#eae7d0" ))
         (green-bg      (if (eq variant 'dark)  "#7b894f"  "#d5e2cd" ))
         (red-bg        (if (eq variant 'dark)  "#512e31"  "#e3c8cc" ))
         (mkwd          (if (eq variant 'dark)  "#989584"  "#7e8083" ))
