@@ -1,8 +1,8 @@
 ;;; majapahit-theme.el --- majapahit for Emacs.
 
-;; Copyright (C) 2015 Alexander Adhyatma
+;; Copyright (C) 2015 Alexander F. Adhyatma
 
-;; Author: Alexander Adhyatma
+;; Author: Alexander F. Adhyatma
 ;; URL: http:/gitlab.com/franksn/majapahit-theme/
 ;; Version: 0.2.0
 ;;
@@ -87,7 +87,7 @@
         (bg4           (if (eq variant 'dark)  "#5c5857"  "#a7a991" ))
         (key1          (if (eq variant 'dark)  "#db6b7e"  "#bf4550" ))
         (key2          (if (eq variant 'dark)  "#bb4e62"  "#797388" ))
-        (builtin       (if (eq variant 'dark)  "#9e7a59"  "#685672" ))
+        (builtin       (if (eq variant 'dark)  "#957c65"  "#685672" ))
         (keyword       (if (eq variant 'dark)  "#d4576f"  "#b84259" ))
         (const         (if (eq variant 'dark)  "#98a299"  "#8d806c" ))
         (comment       (if (eq variant 'dark)  "#646b63"  "#979987" ))
@@ -105,7 +105,7 @@
         (green         (if (eq variant 'dark)  "#adb78d"  "#3b7559" ))
         (yellow        (if (eq variant 'dark)  "#d37a60"  "#b1573c" ))
         (cyan          (if (eq variant 'dark)  "#8b8b7f"  "#6b6254" ))
-        (violet        (if (eq variant 'dark)  "#635363"  "#685672" ))
+        (violet        (if (eq variant 'dark)  "#75727a"  "#685672" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f76" ))
         (active1       (if (eq variant 'dark)  "#20201a"  "#ebdebd" ))
         (active2       (if (eq variant 'dark)  "#63635a"  "#e4d9ba" ))
