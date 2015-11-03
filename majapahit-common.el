@@ -79,9 +79,9 @@
 (defun create-majapahit-theme (variant theme-name)
   (let ((class '((class color) (min-colors 89))) ;;
         ;;                                      DARK        LIGHT
-        (base          (if (eq variant 'dark)  "#e0d9c6"  "#4d5452" ))
-        (cursor        (if (eq variant 'dark)  "#24241e"  "#63615d" ))
-        (bg1           (if (eq variant 'dark)  "#272727"  "#f7f4de" ))
+        (base          (if (eq variant 'dark)  (if (display-graphic-p) "#e0d9c6" "color-230")  (if (display-graphic-p) "#4d5452" "color-238") ))
+        (cursor        (if (eq variant 'dark)  "#353535"  "#63615d" ))
+        (bg1           (if (eq variant 'dark)  (if (display-graphic-p) "#272727" "color-235")  (if (display-graphic-p) "#f7f4de" "color-230") ))
         (bg2           (if (eq variant 'dark)  "#181a1b"  "#f0e5c2" ))
         (bg3           (if (eq variant 'dark)  "#4a403d"  "#ebdebd" ))
         (bg4           (if (eq variant 'dark)  "#5c5857"  "#a7a991" ))
@@ -559,6 +559,8 @@
      `(popup-scroll-bar-background-face ((,class (:background ,active2))))
      `(popup-isearch-match ((,class (:background ,bg1 :foreground ,base :bold t))))
      `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
+
+
 
 ;;;;; other, need more work
      `(ffap ((,class (:foreground ,base))))
