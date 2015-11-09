@@ -107,8 +107,8 @@
         (cyan          (if (eq variant 'dark)  "#8b8b7f"  "#6b6254" ))
         (violet        (if (eq variant 'dark)  "#75727a"  "#685672" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f76" ))
-        (active1       (if (eq variant 'dark)  (if (display-graphic-p) "#42403d" "color-240")  (if (display-graphic-p) "#ebdebd" "color-223") ))
-        (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#63615a" "color-243") (if (display-graphic-p) "#e4d9ba" "color-222")))
+        (active1       (if (eq variant 'dark)  (if (display-graphic-p) "#42403d" "color-240")  (if (display-graphic-p) "#ebdebd" "color-251") ))
+        (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#63615a" "color-243") (if (display-graphic-p) "#e4d9ba" "color-254")))
         (inactive      (if (eq variant 'dark)  "#45b0d3"  "#7eacac" ))
         (m-line-brdr   (if (eq variant 'dark)  "#4c4c42"  "#eddebd" ))
         (org-block-bg  (if (eq variant 'dark)  "#232528"  "#d9e6dd" ))
@@ -230,10 +230,10 @@
      `(company-tooltip ((,class (:background ,active2 :foreground ,base :bold t))))
      `(company-tooltip-annotation ((,class (:foreground ,const))))
      `(company-tooltip-common ((,class (:foreground ,type))))
-     `(company-tooltip-common-selection ((,class (:background ,org-h1-bg :foreground ,(if (eq variant 'dark) keyword keyword)))))
+     `(company-tooltip-common-selection ((,class (:background ,bg2 :foreground ,(if (eq variant 'dark) keyword keyword)))))
      ;;`(company-tooltip-mouse ((,class (:inherit highlight))))
      ;;`(company-tooltip-search ((,class (:inherit match))))
-     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) org-h1-bg org-h1-bg) :foreground ,const :bold t))))
+     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) bg2 bg2) :foreground ,const :bold t))))
 
 ;;;;; diff
      `(diff-added             ((,class :background nil :foreground ,green)))
