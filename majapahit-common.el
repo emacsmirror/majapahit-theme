@@ -112,7 +112,7 @@
         (inactive      (if (eq variant 'dark)  "#45b0d3"  "#7eacac" ))
         (m-line-brdr   (if (eq variant 'dark)  "#4c4c42"  "#eddebd" ))
         (org-block-bg  (if (eq variant 'dark)  "#232528"  "#d9e6dd" ))
-        (org-h1-bg     (if (eq variant 'dark)  "#32434a"  "#edf1ed" ))
+        (org-h1-bg     (if (eq variant 'dark)  "#32434a"  "#f1eadd" ))
         (org-h2-bg     (if (eq variant 'dark)  "#63635a"  "#e0e4e3" ))
         (org-h3-bg     (if (eq variant 'dark)  "#73735a"  "#f3f3e1" ))
         (org-h4-bg     (if (eq variant 'dark)  "#8c8c7d"  "#f6f1e1" ))
