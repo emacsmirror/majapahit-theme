@@ -81,7 +81,7 @@
         ;;                                      DARK        LIGHT
         (base          (if (eq variant 'dark)  (if (display-graphic-p) "#e0d9c6" "color-230")  (if (display-graphic-p) "#4d5452" "color-238")))
         (cursor        (if (eq variant 'dark)  "#eddebd"  "#63615d" ))
-        (bg1           (if (eq variant 'dark)  (if (display-graphic-p) "#2A1F1B" "color-235")  (if (display-graphic-p) "#f7f4de" "color-230")))
+        (bg1           (if (eq variant 'dark)  (if (display-graphic-p) "#2A1F1B" "color-235")  (if (display-graphic-p) "#f7f4de" "color-231")))
         (bg2           (if (eq variant 'dark)  (if (display-graphic-p) "#3A2F2C" "color-239")  (if (display-graphic-p) "#fcf9e4" "color-223")))
         (bg3           (if (eq variant 'dark)  (if (display-graphic-p) "#4a3f3d" "color-240")  (if (display-graphic-p) "#ece8d0" "color-223")))
         (bg4           (if (eq variant 'dark)  (if (display-graphic-p) "#5c5857" "color-242")  (if (display-graphic-p) "#a7a991" "#a7a991")))
