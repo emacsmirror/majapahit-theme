@@ -79,7 +79,7 @@
 (defun create-majapahit-theme (variant theme-name)
   (let ((class '((class color) (min-colors 89))) ;;
         ;;                                      DARK        LIGHT
-        (base          (if (eq variant 'dark)  (if (display-graphic-p) "#e0d9c6" "color-230")  (if (display-graphic-p) "#4d5452" "color-238")))
+        (base          (if (eq variant 'dark)  (if (display-graphic-p) "#e0d9c6" "color-231")  (if (display-graphic-p) "#4d5452" "color-238")))
         (cursor        (if (eq variant 'dark)  "#eddebd"  "#63615d" ))
         (bg1           (if (eq variant 'dark)  (if (display-graphic-p) "#2A1F1B" "color-235")  (if (display-graphic-p) "#f7f4de" "color-231")))
         (bg2           (if (eq variant 'dark)  (if (display-graphic-p) "#3A2F2C" "color-239")  (if (display-graphic-p) "#fcf9e4" "color-223")))
@@ -91,7 +91,7 @@
         (keyword       (if (eq variant 'dark)  "#d4576f"  "#b84259" ))
         (const         (if (eq variant 'dark)  "#98a299"  "#8d806c" ))
         (comment       (if (eq variant 'dark)  "#646b63"  "#979987" ))
-        (comment-bg    (if (eq variant 'dark)  (if (display-graphic-p) "#2A1F1B" "color-235")  (if (display-graphic-p) "#f7f4de" "color-230")))
+        (comment-bg    (if (eq variant 'dark)  (if (display-graphic-p) "#2A1F1B" "color-235")  (if (display-graphic-p) "#f7f4de" "color-231")))
         (func          (if (eq variant 'dark)  "#adb78d"  "#3b7559" ))
         (str           (if (eq variant 'dark)  (if (display-graphic-p) "#849f98" "color-109")  "#6b6254" ))
         (type          (if (eq variant 'dark)  (if (display-graphic-p) "#768d82" "color-67")  (if (display-graphic-p) "#3c657e" "color-67") ))
