@@ -4,7 +4,7 @@
 
 ;; Author: Alexander F. Adhyatma
 ;; URL: http:/gitlab.com/franksn/majapahit-theme/
-;; Version: 0.2.0
+;; Version: 0.3.0
 ;;
 ;; This file is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -85,10 +85,10 @@
         (bg2           (if (eq variant 'dark)  (if (display-graphic-p) "#3A2F2C" "color-239")  (if (display-graphic-p) "#fcf9e4" "color-223")))
         (bg3           (if (eq variant 'dark)  (if (display-graphic-p) "#4a3f3d" "color-240")  (if (display-graphic-p) "#ece8d0" "color-223")))
         (bg4           (if (eq variant 'dark)  (if (display-graphic-p) "#5c5857" "color-242")  (if (display-graphic-p) "#a7a991" "#a7a991")))
-        (key1          (if (eq variant 'dark)  (if (display-graphic-p) "#db6b7e" "color-132")  (if (display-graphic-p) "#bf4550" "color-168")))
+        (key1          (if (eq variant 'dark)  (if (display-graphic-p) "#db6b7e" "color-132")  (if (display-graphic-p) "#b54567" "color-168")))
         (key2          (if (eq variant 'dark)  (if (display-graphic-p) "#bb4e62" "color-163")  (if (display-graphic-p) "#797388" "#777282")))
         (builtin       (if (eq variant 'dark)  (if (display-graphic-p) "#957c65" "#957c65") (if (display-graphic-p) "#685672" "#685672")))
-        (keyword       (if (eq variant 'dark)  (if (display-graphic-p) "#d4576f" "color-210")  (if (display-graphic-p) "#b84259" "color-168")))
+        (keyword       (if (eq variant 'dark)  (if (display-graphic-p) "#d4576f" "color-210")  (if (display-graphic-p) "#b64568" "color-168")))
         (const         (if (eq variant 'dark)  (if (display-graphic-p) "#a29f98" "color-137")  (if (display-graphic-p) "#8d806c" "color-137")))
         (comment       (if (eq variant 'dark)  (if (display-graphic-p) "#646b63" "color-144")  (if (display-graphic-p) "#979987" "color-144")))
         (comment-bg    (if (eq variant 'dark)  (if (display-graphic-p) "#2A1F1B" "color-235")  (if (display-graphic-p) "#f7f4de" "color-231")))
