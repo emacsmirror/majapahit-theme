@@ -119,7 +119,7 @@
         (highlight     (if (eq variant 'dark)  "#2a2a24"  "#eae7d0" ))
         (green-bg      (if (eq variant 'dark)  "#7b894f"  "#d5e2cd" ))
         (red-bg        (if (eq variant 'dark)  "#512e31"  "#e3c8cc" ))
-        (mkwd          (if (eq variant 'dark)  (if (display-graphic-p) "#988d84" "color-180")  (if (display-graphic-p) "#7e8083" "color-103") ))
+        (mkwd          (if (eq variant 'dark)  (if (display-graphic-p) "#988d84" "color-180")  (if (display-graphic-p) "#7e8083" "color-145") ))
         (pth1          (if (eq variant 'dark)  "#e19366"  "#7d7f71" ))
         (pth2          (if (eq variant 'dark)  "#f1bc6a"  "#a46c75" ))
         (pth3          (if (eq variant 'dark)  "#4da0c4"  "#2b7b7b" ))
