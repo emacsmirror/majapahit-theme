@@ -80,7 +80,7 @@
   (let ((class '((class color) (min-colors 89))) ;;
         ;;                                      DARK        LIGHT
         (base          (if (eq variant 'dark)  (if (display-graphic-p) "#e0d9c6" "color-231")  (if (display-graphic-p) "#4d5452" "color-238")))
-        (cursor        (if (eq variant 'dark)  "#eddebd"  "#63615d" ))
+        (cursor        (if (eq variant 'dark)  "#eddebd"  (if (display-graphic-p) "#faf8ee" "color-231") ))
         (bg1           (if (eq variant 'dark)  (if (display-graphic-p) "#2A1F1B" "color-235")  (if (display-graphic-p) "#fffdf3" "color-231")))
         (bg2           (if (eq variant 'dark)  (if (display-graphic-p) "#3A2F2C" "color-239")  (if (display-graphic-p) "#faf8ee" "color-223")))
         (bg3           (if (eq variant 'dark)  (if (display-graphic-p) "#4a3f3d" "color-240")  (if (display-graphic-p) "#efecdf" "color-223")))
