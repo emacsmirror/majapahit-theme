@@ -107,10 +107,10 @@
         (cyan          (if (eq variant 'dark)  (if (display-graphic-p) "#8b8b7f" "color-180")  (if (display-graphic-p) "#6b6254" "color-180")))
         (violet        (if (eq variant 'dark)  "#75727a"  "#685672" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f76" ))
-        (active1       (if (eq variant 'dark)  (if (display-graphic-p) "#4a3f3d" "color-240")  (if (display-graphic-p) "#F2EFDA" "color-252") ))
-        (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#78635D" "color-241") (if (display-graphic-p) "#efecdf" "color-254")))
+        (active1       (if (eq variant 'dark)  (if (display-graphic-p) "#4a3f3d" "color-240")  (if (display-graphic-p) "#CAE8E8" "color-152") ))
+        (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#78635D" "color-241") (if (display-graphic-p) "#faf8ee" "color-254")))
         (inactive      (if (eq variant 'dark)  "#45b0d3"  "#a5d6d6" ))
-        (m-line-brdr   (if (eq variant 'dark)  "#4c4c42"  "#efecdf" ))
+        (m-line-brdr   (if (eq variant 'dark)  "#4c4c42"  (if (display-graphic-p) "#cae8e8" "color-152") ))
         (org-block-bg  (if (eq variant 'dark)  "#282523"  "#d9e6dd" ))
         (org-h1-bg     (if (eq variant 'dark)  "#4a3432"  "#f0eee4" ))
         (org-h2-bg     (if (eq variant 'dark)  "#63635a"  "#d3e6e6" ))
@@ -448,9 +448,9 @@
      `(magit-section-title ((,class (:background ,bg1 :foreground ,builtin :weight bold))))
 
 ;;;;; mode-line
-     `(mode-line           ((,class (:foreground ,base :background ,active1 :box (:color ,m-line-brdr :line-width 1)))))
+     `(mode-line           ((,class (:foreground ,bg1 :background ,active1 :box (:color ,m-line-brdr :line-width 1)))))
      `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1     :box (:color ,m-line-brdr :line-width 1)))))
-     `(mode-line-buffer-id ((,class (:bold t :foreground ,func))))
+     `(mode-line-buffer-id ((,class (:bold t :foreground ,inf))))
 
 ;;;;; neotree
      `(neo-dir-link-face ((,class (:foreground ,inf :weight bold))))
