@@ -108,7 +108,7 @@
         (violet        (if (eq variant 'dark)  "#75727a"  "#685672" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f76" ))
         (active1       (if (eq variant 'dark)  (if (display-graphic-p) "#4a3f3d" "color-240")  (if (display-graphic-p) "#faf8ee" "color-254") ))
-        (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#78635D" "color-241") (if (display-graphic-p) "#cae8e8" "color-152")))
+        (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#78635D" "color-241") (if (display-graphic-p) "#b0c2c2" "color-152")))
         (inactive      (if (eq variant 'dark)  "#45b0d3"  "#a5d6d6" ))
         (m-line-brdr   (if (eq variant 'dark)  "#4c4c42"  (if (display-graphic-p) "#cae8e8" "color-152") ))
         (org-block-bg  (if (eq variant 'dark)  "#282523"  "#d9e6dd" ))
@@ -505,8 +505,8 @@
      `(persp-selected-face ((,class (:bold t :foreground ,func))))
 
 ;;;;; powerline
-     `(powerline-active1 ((,class (:background ,active1 :foreground ,base))))
-     `(powerline-active2 ((,class (:background ,active1 :foreground ,base))))
+     `(powerline-active1 ((,class (:background ,active2 :foreground ,bg1))))
+     `(powerline-active2 ((,class (:background ,active2 :foreground ,bg1))))
      `(powerline-inactive1 ((,class (:background ,bg2 :foreground ,base))))
      `(powerline-inactive2 ((,class (:background ,bg2 :foreground ,base))))
 
