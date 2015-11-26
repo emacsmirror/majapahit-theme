@@ -230,7 +230,7 @@
      `(company-tooltip ((,class (:background ,active1 :foreground ,base :bold t))))
      `(company-tooltip-annotation ((,class (:foreground ,const))))
      `(company-tooltip-common ((,class (:foreground ,type))))
-     `(company-tooltip-common-selection ((,class (:background ,bg2 :foreground ,(if (eq variant 'dark) keyword keyword)))))
+     `(company-tooltip-common-selection ((,class (:background ,bg3 :foreground ,(if (eq variant 'dark) keyword keyword)))))
      ;;`(company-tooltip-mouse ((,class (:inherit highlight))))
      ;;`(company-tooltip-search ((,class (:inherit match))))
      `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) bg2 bg2) :foreground ,const :bold t))))
@@ -247,7 +247,7 @@
      `(diff-removed           ((,class :background nil :foreground ,red)))
 
 ;;;;; dired
-     `(dired-directory ((,class (:foreground ,key1 :background ,bg1 :weight bold))))
+     `(dired-directory ((,class (:foreground ,type :background ,bg1 :weight bold))))
      `(dired-flagged ((,class (:foreground ,red))))
      `(dired-header ((,class (:foreground ,comp :weight bold))))
      `(dired-ignored ((,class (:inherit shadow))))
@@ -360,11 +360,11 @@
      `(helm-buffer-saved-out ((,class (:foreground ,base :background ,bg1))))
      `(helm-buffer-size ((,class (:foreground ,base :background ,bg1))))
      `(helm-candidate-number ((,class (:background ,bg1 :foreground ,inf :bold t))))
-     `(helm-ff-directory ((,class (:foreground ,key1 :background ,bg1 :weight bold))))
+     `(helm-ff-directory ((,class (:foreground ,cyan :background ,bg1 :weight bold))))
      `(helm-ff-dotted-directory ((,class (:foreground ,key1 :background ,bg1 :weight bold))))
      `(helm-ff-executable ((,class (:foreground ,suc :background ,bg1 :weight normal))))
      `(helm-ff-file ((,class (:foreground ,base :background ,bg1 :weight normal))))
-     `(helm-ff-invalid-symlink ((,class (:foreground ,red :background ,bg1 :weight bold))))
+     `(helm-ff-invalid-symlink ((,class (:foreground ,err :background ,bg1 :weight bold))))
      `(helm-ff-prefix ((,class (:foreground ,bg1 :background ,keyword :weight normal))))
      `(helm-ff-symlink ((,class (:foreground ,cyan :background ,bg1 :weight bold))))
      `(helm-grep-cmd-line ((,class (:foreground ,base :background ,bg1))))
@@ -378,8 +378,8 @@
      `(helm-match ((,class (:foreground ,inf :background ,bg1))))
      `(helm-match-item ((,class (:inherit match))))
      `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))
-     `(helm-selection ((,class (:background ,bg2 :foreground ,keyword))))
-     `(helm-selection-line ((,class (:background ,bg3))))
+     `(helm-selection ((,class (:background ,bg2 foreground ,inf))))
+     `(helm-selection-line ((,class (:background ,active2))))
      `(helm-separator ((,class (:foreground ,comp :background ,bg1))))
      `(helm-source-header ((,class (:background ,comp :foreground ,bg1 :bold t))))
      `(helm-time-zone-current ((,class (:foreground ,builtin :background ,bg1))))
@@ -560,6 +560,17 @@
      `(popup-isearch-match ((,class (:background ,bg1 :foreground ,base :bold t))))
      `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
 
+;;;;; whitespace-mode
+     `(trailing-whitespace ((,class :foreground nil :background ,err)))
+     `(whitespace-empty ((,class (:background nil :foreground ,yellow))))
+     `(whitespace-indentation ((,class (:background nil :foreground ,war))))
+     `(whitespace-line ((,class (:background nil :foreground ,comp))))
+     `(whitespace-newline ((,class (:background nil :foreground ,comp))))
+     `(whitespace-space ((,class (:background nil :foreground ,active2))))
+     `(whitespace-space-after-tab ((,class (:background nil :foreground ,yellow))))
+     `(whitespace-space-before-tab ((,class (:background nil :foreground ,yellow))))
+     `(whitespace-tab ((,class (:background nil))))
+     `(whitespace-trailing ((,class (:background ,err :foreground ,war))))
 
 
 ;;;;; other, need more work
@@ -585,7 +596,6 @@
      `(mu4e-header-marks-face ((,class (:foreground ,comp))))
      `(mu4e-view-url-number-face ((,class (:foreground ,comp))))
      `(slime-repl-inputed-output-face ((,class (:foreground ,comp))))
-     `(trailing-whitespace ((,class :foreground nil :background ,err)))
      `(undo-tree-visualizer-current-face ((,class :foreground ,builtin)))
      `(undo-tree-visualizer-default-face ((,class :foreground ,base)))
      `(undo-tree-visualizer-register-face ((,class :foreground ,comp)))
