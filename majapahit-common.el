@@ -107,8 +107,8 @@
         (cyan          (if (eq variant 'dark)  (if (display-graphic-p) "#8b8b7f" "color-180")  (if (display-graphic-p) "#6b6254" "color-180")))
         (violet        (if (eq variant 'dark)  "#75727a"  "#685672" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f76" ))
-        (active1       (if (eq variant 'dark)  (if (display-graphic-p) "#4a3f3d" "color-240")  (if (display-graphic-p) "#CAE8E8" "color-152") ))
-        (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#78635D" "color-241") (if (display-graphic-p) "#faf8ee" "color-254")))
+        (active1       (if (eq variant 'dark)  (if (display-graphic-p) "#4a3f3d" "color-240")  (if (display-graphic-p) "#faf8ee" "color-254") ))
+        (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#78635D" "color-241") (if (display-graphic-p) "#cae8e8" "color-152")))
         (inactive      (if (eq variant 'dark)  "#45b0d3"  "#a5d6d6" ))
         (m-line-brdr   (if (eq variant 'dark)  "#4c4c42"  (if (display-graphic-p) "#cae8e8" "color-152") ))
         (org-block-bg  (if (eq variant 'dark)  "#282523"  "#d9e6dd" ))
@@ -180,13 +180,13 @@
      `(link-visited ((,class (:foreground ,keyword :underline t))))
      `(match ((,class (:background ,bg1 :foreground ,inf :weight bold))))
      `(minibuffer-prompt ((,class (:bold t :foreground ,inf))))
-     `(page-break-lines ((,class (:foreground ,active2))))
-     `(popup-tip-face ((,class (:background ,active2 :foreground ,base :bold nil :italic nil :underline nil))))
+     `(page-break-lines ((,class (:foreground ,active1))))
+     `(popup-tip-face ((,class (:background ,active1 :foreground ,base :bold nil :italic nil :underline nil))))
      `(region ((,class (:background ,highlight))))
      `(secondary-selection ((,class (:background ,bg3))))
-     `(show-paren-match-face ((,class (:background ,active2 :foreground ,suc))))
+     `(show-paren-match-face ((,class (:background ,active1 :foreground ,suc))))
      `(success ((,class (:foreground ,suc))))
-     `(tooltip ((,class (:background ,active2 :foreground ,base :bold nil :italic nil :underline nil))))
+     `(tooltip ((,class (:background ,active1 :foreground ,base :bold nil :italic nil :underline nil))))
      `(vertical-border ((,class (:foreground ,bg4))))
      `(warning ((,class (:foreground ,war ))))
 
@@ -222,12 +222,12 @@
 ;;;;; company
      `(company-echo-common ((,class (:background ,bg1 :foreground ,base))))
      `(company-preview ((,class (:background ,bg1 :foreground ,key1))))
-     `(company-preview-common ((,class (:background ,active2 :foreground ,keyword))))
-     `(company-preview-search ((,class (:background ,active2 :foreground ,green))))
-     `(company-scrollbar-bg ((,class (:background ,active2))))
+     `(company-preview-common ((,class (:background ,active1 :foreground ,keyword))))
+     `(company-preview-search ((,class (:background ,active1 :foreground ,green))))
+     `(company-scrollbar-bg ((,class (:background ,active1))))
      `(company-scrollbar-fg ((,class (:background ,bg3))))
      `(company-template-field ((,class (:inherit region))))
-     `(company-tooltip ((,class (:background ,active2 :foreground ,base :bold t))))
+     `(company-tooltip ((,class (:background ,active1 :foreground ,base :bold t))))
      `(company-tooltip-annotation ((,class (:foreground ,const))))
      `(company-tooltip-common ((,class (:foreground ,type))))
      `(company-tooltip-common-selection ((,class (:background ,bg2 :foreground ,(if (eq variant 'dark) keyword keyword)))))
@@ -448,7 +448,7 @@
      `(magit-section-title ((,class (:background ,bg1 :foreground ,builtin :weight bold))))
 
 ;;;;; mode-line
-     `(mode-line           ((,class (:foreground ,bg1 :background ,active1 :box (:color ,m-line-brdr :line-width 1)))))
+     `(mode-line           ((,class (:foreground ,bg4 :background ,active1 :box (:color ,m-line-brdr :line-width 1)))))
      `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1     :box (:color ,m-line-brdr :line-width 1)))))
      `(mode-line-buffer-id ((,class (:bold t :foreground ,inf))))
 
@@ -505,8 +505,8 @@
      `(persp-selected-face ((,class (:bold t :foreground ,func))))
 
 ;;;;; powerline
-     `(powerline-active1 ((,class (:background ,active2 :foreground ,base))))
-     `(powerline-active2 ((,class (:background ,active2 :foreground ,base))))
+     `(powerline-active1 ((,class (:background ,active1 :foreground ,base))))
+     `(powerline-active2 ((,class (:background ,active1 :foreground ,base))))
      `(powerline-inactive1 ((,class (:background ,bg2 :foreground ,base))))
      `(powerline-inactive2 ((,class (:background ,bg2 :foreground ,base))))
 
@@ -552,11 +552,11 @@
      `(which-key-special-key-face ((,class (:background ,func :foreground ,bg1))))
 
 ;;;;; auto-complete
-     `(ac-candidate-face ((,class (:background ,active2 :foreground ,base))))
+     `(ac-candidate-face ((,class (:background ,active1 :foreground ,base))))
      `(ac-selection-face ((,class (:background ,type :foreground ,base))))
      `(popup-tip-face ((,class (:background ,red :foreground ,base))))
      `(popup-scroll-bar-foreground-face ((,class (:background ,type))))
-     `(popup-scroll-bar-background-face ((,class (:background ,active2))))
+     `(popup-scroll-bar-background-face ((,class (:background ,active1))))
      `(popup-isearch-match ((,class (:background ,bg1 :foreground ,base :bold t))))
      `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
 
