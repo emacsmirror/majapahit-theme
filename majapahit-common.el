@@ -116,7 +116,7 @@
         (org-h2-bg     (if (eq variant 'dark)  "#63635a"  "#d3e6e6" ))
         (org-h3-bg     (if (eq variant 'dark)  "#73705a"  "#f3f1e6" ))
         (org-h4-bg     (if (eq variant 'dark)  "#8c897d"  "#f6f1e1" ))
-        (highlight     (if (eq variant 'dark)  "#2a2a24"  (if (display-graphic-p) "#DCE6E6" "color-230") ))
+        (highlight     (if (eq variant 'dark)  "#2a2a24"  (if (display-graphic-p) "#DCE6E6" "color-223") ))
         (green-bg      (if (eq variant 'dark)  "#7b894f"  "#d5e2cd" ))
         (red-bg        (if (eq variant 'dark)  "#512e31"  "#e3c8cc" ))
         (mkwd          (if (eq variant 'dark)  (if (display-graphic-p) "#988d84" "color-180")  (if (display-graphic-p) "#7e8083" "color-145") ))
@@ -381,7 +381,7 @@
      `(helm-selection ((,class (:background ,bg2 foreground ,inf))))
      `(helm-selection-line ((,class (:background ,active2))))
      `(helm-separator ((,class (:foreground ,comp :background ,bg1))))
-     `(helm-source-header ((,class (:background ,comp :foreground ,bg1 :bold t))))
+     `(helm-source-header ((,class (:background ,active2 :foreground ,bg1 :bold t))))
      `(helm-time-zone-current ((,class (:foreground ,builtin :background ,bg1))))
      `(helm-time-zone-home ((,class (:foreground ,comp :background ,bg1))))
      `(helm-visible-mark ((,class (:foreground ,bg1 :background ,green))))
@@ -392,7 +392,7 @@
      `(helm-swoop-target-word-face ((,class (:foreground ,bg1 :background ,suc))))
 
 ;;;;; ido
-     `(ido-first-match ((,class (:foreground ,comp :bold t))))
+     `(ido-first-match ((,class (:foreground ,inf :bold t))))
      `(ido-only-match ((,class (:foreground ,(if (eq variant 'dark) suc red) :bold t))))
      `(ido-subdir ((,class (:foreground ,key1))))
      `(ido-vertical-match-face ((,class (:foreground ,comp :underline nil))))
