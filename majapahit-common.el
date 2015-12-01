@@ -397,8 +397,8 @@
 ;;;;; ido
      `(ido-first-match ((,class (:foreground ,inf :bold t))))
      `(ido-only-match ((,class (:foreground ,(if (eq variant 'dark) suc red) :bold t))))
-     `(ido-subdir ((,class (:foreground ,key1))))
-     `(ido-vertical-match-face ((,class (:foreground ,comp :underline nil))))
+     `(ido-subdir ((,class (:foreground ,cyan))))
+     `(ido-vertical-match-face ((,class (:foreground ,base :underline nil))))
 
 ;;;;; info
      `(info-header-xref ((,class (:foreground ,func :underline t))))
