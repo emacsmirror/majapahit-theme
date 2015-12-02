@@ -124,7 +124,7 @@
         (pth2          (if (eq variant 'dark)  "#f1bc6a"  "#a46c7f" ))
         (pth3          (if (eq variant 'dark)  "#4da0c4"  "#2b777b" ))
         (pth4          (if (eq variant 'dark)  "#9aba4f"  "#54916d" ))
-        (pth5          (if (eq variant 'dark)  "#c4556b"  "#be8743" ))
+        (pth5          (if (eq variant 'dark)  "#c4556b"  "#c75072" ))
         (pth6          (if (eq variant 'dark)  "#5c737c"  "#547580" ))
         (pth7          (if (eq variant 'dark)  "#ac907c"  "#927c5e" ))
         (pth8          (if (eq variant 'dark)  "#e47376"  "#478cdb" ))
