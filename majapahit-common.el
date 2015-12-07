@@ -79,7 +79,7 @@
 (defun create-majapahit-theme (variant theme-name)
   (let ((class '((class color) (min-colors 89))) ;;
         ;;                                      DARK        LIGHT
-        (base          (if (eq variant 'dark)  (if (display-graphic-p) "#e0d9c6" "color-231")  (if (display-graphic-p) "#4d5452" "color-238")))
+        (base          (if (eq variant 'dark)  (if (display-graphic-p) "#f6efe1" "color-231")  (if (display-graphic-p) "#4d5452" "color-238")))
         (cursor        (if (eq variant 'dark)  "#eddebd"  (if (display-graphic-p) "#8d806c" "color-180") ))
         (bg1           (if (eq variant 'dark)  (if (display-graphic-p) "#272727" "color-235")  (if (display-graphic-p) "#fffdf3" "color-231")))
         (bg2           (if (eq variant 'dark)  (if (display-graphic-p) "#333333" "color-237")  (if (display-graphic-p) "#faf8ee" "color-255")))
