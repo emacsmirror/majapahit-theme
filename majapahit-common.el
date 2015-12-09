@@ -615,13 +615,6 @@
      `(web-mode-string-face ((,class (:foreground ,str))))
      `(web-mode-type-face ((,class (:inherit ,font-lock-type-face))))
      `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face)))))))
-;;;;; ansi-colors
-     `(ansi-color-names-vector
-       [,bg2 ,key1 ,func ,yellow ,type ,violet ,cyan ,base])
-
-;;;;; xterm-colors
-     `(xterm-color-names [,bg2 ,key1 ,func ,const ,type ,violet ,cyan ,base])
-     `(xterm-color-names-bright [,bg3 ,comp ,yellow ,inf ,interop ,builtin ,base])
 
 ;;;###autoload
 (when load-file-name
