@@ -100,7 +100,7 @@
         (err           (if (eq variant 'dark)  "#8e6a60"  "#f1847b" ))
         (war           (if (eq variant 'dark)  "#d99481"  "#c07d3c" ))
         (inf           (if (eq variant 'dark)  (if (display-graphic-p) "#768d82" "color-67")  (if (display-graphic-p) "#87afaf" "color-109") ))
-        (interop       (if (eq variant 'dark)  "#75727a"  "#685672" ))
+        (interop       (if (eq variant 'dark)  "#75727a"  "#807b8b" ))
         (suc           (if (eq variant 'dark)  (if (display-graphic-p) "#bdc79e" "color-187")  (if (display-graphic-p) "#5faf87" "color-108") ))
         (green         (if (eq variant 'dark)  "#adb78d"  "#3b7559" ))
         (yellow        (if (eq variant 'dark)  "#d37a60"  "#d7875f" ))
@@ -616,6 +616,18 @@
      `(web-mode-type-face ((,class (:inherit ,font-lock-type-face))))
      `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face)))))))
 
+(custom-theme-set-variables
+ theme-name
+
+  ;;;;; ansi-colors
+ `(ansi-color-names-vector
+   [,bg2 ,key1 ,func ,yellow ,type ,violet ,cyan ,base])
+
+  ;;;;; xterm-colors
+ `(xterm-color-names [,bg2 ,key1 ,func ,const ,type ,violet ,cyan ,base])
+ `(xterm-color-names-bright [,bg3 ,comp ,yellow ,inf ,interop ,builtin ,base])
+
+ )
 
 ;;;###autoload
 (when load-file-name
