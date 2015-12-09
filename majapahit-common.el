@@ -614,7 +614,22 @@
      `(web-mode-keyword-face ((,class (:foreground ,keyword))))
      `(web-mode-string-face ((,class (:foreground ,str))))
      `(web-mode-type-face ((,class (:inherit ,font-lock-type-face))))
-     `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face)))))))
+     `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face)))))
+
+    (custom-theme-set-variables
+     theme-name
+
+  ;;;;; ansi-colors
+     `(ansi-color-names-vector
+       [,bg2 ,key1 ,func ,yellow ,type ,violet ,cyan ,base])
+
+  ;;;;; xterm-colors
+     `(xterm-color-names [,bg2 ,key1 ,func ,const ,type ,violet ,cyan ,base])
+     `(xterm-color-names-bright [,bg3 ,comp ,yellow ,inf ,interop ,builtin ,base])
+
+     )
+
+    ))
 
 ;;;###autoload
 (when load-file-name
