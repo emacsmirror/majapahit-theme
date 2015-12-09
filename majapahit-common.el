@@ -627,8 +627,9 @@
      `(xterm-color-names [,bg2 ,key1 ,func ,const ,type ,violet ,cyan ,base])
      `(xterm-color-names-bright [,bg3 ,comp ,yellow ,inf ,interop ,builtin ,base])
 
+  ;;;;; pos-tip
+     `(pos-tip-background-color ,bg2)
      )
-
     ))
 
 ;;;###autoload
