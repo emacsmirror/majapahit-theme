@@ -108,7 +108,7 @@
         (violet        (if (eq variant 'dark)  "#75727a"  "#685672" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f7e" ))
         (active1       (if (eq variant 'dark)  (if (display-graphic-p) "#333333" "color-238")  (if (display-graphic-p) "#faf8ee" "color-254") ))
-        (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#768d82" "color-67") (if (display-graphic-p) "#438599" "color-109")))
+        (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#768d82" "color-67") (if (display-graphic-p) "#86a9ad" "color-109")))
         (inactive      (if (eq variant 'dark)  "#45b0d3"  "#a5d6d6" ))
         (m-line-brdr   (if (eq variant 'dark)  (if (display-graphic-p) "#667a71" "color-144")  (if (display-graphic-p) "#cae8e8" "color-152") ))
         (org-block-bg  (if (eq variant 'dark)  "#282523"  "#d9e6dd" ))
