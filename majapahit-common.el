@@ -270,8 +270,8 @@
      `(ediff-fine-diff-Ancestor ((,class(:background nil :bold t :underline t))))
      `(ediff-fine-diff-B ((,class(:background nil :bold t :underline t))))
      `(ediff-fine-diff-C ((,class(:background nil :bold t :underline t))))
-     `(ediff-odd-diff-A ((,class(:background ,bg4))))
-     `(ediff-odd-diff-Ancestor ((,class(:background ,bg4))))
+     `(ediff-odd-diff-A ((,class(:background ,(if (eq variant 'dark) highlight bg4)))))
+     `(ediff-odd-diff-Ancestor ((,class(:background ,(if (eq variant 'dark) highlight bg4)))))
      `(ediff-odd-diff-B ((,class(:background ,bg4))))
      `(ediff-odd-diff-C ((,class(:background ,bg4))))
 
@@ -430,7 +430,7 @@
      `(magit-branch-current ((,class (:background ,org-h1-bg :foreground ,inf :weight bold :box t))))
      `(magit-branch-local ((,class (:background ,org-h1-bg :foreground ,inf :weight bold))))
      `(magit-branch-remote ((,class (:background ,org-h2-bg :foreground ,str :weight bold))))
-     `(magit-diff-context-highlight ((,class (:background ,bg3 :foreground ,base))))
+     `(magit-diff-context-highlight ((,class (:background ,(if (eq variant 'dark) highlight bg3) :foreground ,base))))
      `(magit-diff-file-header ((,class (:background nil :foreground ,str))))
      `(magit-diff-hunk-header ((,class (:background nil :foreground ,builtin))))
      `(magit-hash ((,class (:foreground ,var))))
@@ -533,7 +533,7 @@
      `(shm-quarantine-face ((,class (:background ,red-bg))))
 
 ;;;;; smartparens
-     `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
+     `(sp-pair-overlay-face ((,class (:background ,(if (eq variant dark) bg2 highlight) :foreground nil))))
      `(sp-show-pair-match-face ((,class (:foreground ,(if (eq variant 'dark) suc red) :weight bold :underline t))))
 
 ;;;;; term
