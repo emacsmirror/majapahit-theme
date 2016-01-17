@@ -533,7 +533,7 @@
      `(shm-quarantine-face ((,class (:background ,red-bg))))
 
 ;;;;; smartparens
-     `(sp-pair-overlay-face ((,class (:background ,(if (eq variant dark) bg2 highlight) :foreground nil))))
+     `(sp-pair-overlay-face ((,class (:background ,(if (eq variant 'dark) bg2 highlight) :foreground nil))))
      `(sp-show-pair-match-face ((,class (:foreground ,(if (eq variant 'dark) suc red) :weight bold :underline t))))
 
 ;;;;; term
