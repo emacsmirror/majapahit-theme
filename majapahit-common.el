@@ -119,7 +119,7 @@
         (highlight     (if (eq variant 'dark)  (if (display-graphic-p) "#181512" "color-233")  (if (display-graphic-p) "#F5F3EB" "color-254") ))
         (green-bg      (if (eq variant 'dark)  "#7b894f"  "#d5e2cd" ))
         (red-bg        (if (eq variant 'dark)  "#512e31"  "#e3c8cc" ))
-        (mkwd          (if (eq variant 'dark)  (if (display-graphic-p) "#989384" "color-180")  (if (display-graphic-p) "#7e8083" "color-145") ))
+        (mkwd          (if (eq variant 'dark)  (if (display-graphic-p) "#c7c7ae" "color-180")  (if (display-graphic-p) "#7e8083" "color-145") ))
         (pth1          (if (eq variant 'dark)  "#e19366"  "#7d7f71" ))
         (pth2          (if (eq variant 'dark)  "#f1bc6a"  "#a46c7f" ))
         (pth3          (if (eq variant 'dark)  "#4da0c4"  "#2b777b" ))
@@ -172,8 +172,8 @@
 
 ;;;;; basic stuffs
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
-     `(highlight ((,class (:foreground ,base :background ,bg2))))
-     `(hl-line ((,class (:background ,bg2))))
+     `(highlight ((,class (:foreground ,base :background ,(if (eq variant 'dark) highlight bg2)))))
+     `(hl-line ((,class (:background ,(if (eq variant 'dark) highlight bg2)))))
      `(isearch ((,class (:bold t :foreground ,inf :background ,bg1))))
      `(lazy-highlight ((,class (:foreground ,base :background ,bg1 :weight normal))))
      `(link ((,class (:foreground ,inf :underline t))))
@@ -230,10 +230,10 @@
      `(company-tooltip ((,class (:background ,active1 :foreground ,base :bold t))))
      `(company-tooltip-annotation ((,class (:foreground ,const))))
      `(company-tooltip-common ((,class (:foreground ,type))))
-     `(company-tooltip-common-selection ((,class (:background ,bg3 :foreground ,(if (eq variant 'dark) keyword keyword)))))
+     `(company-tooltip-common-selection ((,class (:background ,(if (eq variant 'dark) bg2 bg3) :foreground ,(if (eq variant 'dark) keyword keyword)))))
      ;;`(company-tooltip-mouse ((,class (:inherit highlight))))
      ;;`(company-tooltip-search ((,class (:inherit match))))
-     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) bg2 bg2) :foreground ,const :bold t))))
+     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) highlight bg2) :foreground ,const :bold t))))
 
 ;;;;; diff
      `(diff-added             ((,class :background nil :foreground ,green)))
@@ -508,8 +508,8 @@
      `(persp-selected-face ((,class (:bold t :foreground ,func))))
 
 ;;;;; powerline
-     `(powerline-active1 ((,class (:background ,active2 :foreground ,bg1))))
-     `(powerline-active2 ((,class (:background ,active2 :foreground ,bg1))))
+     `(powerline-active1 ((,class (:background ,active2 :foreground ,base))))
+     `(powerline-active2 ((,class (:background ,active2 :foreground ,base))))
      `(powerline-inactive1 ((,class (:background ,bg2 :foreground ,base))))
      `(powerline-inactive2 ((,class (:background ,bg2 :foreground ,base))))
 
