@@ -123,7 +123,7 @@
         (pth1          (if (eq variant 'dark)  "#e19366"  "#7d7f71" ))
         (pth2          (if (eq variant 'dark)  "#fac087"  "#a46c7f" ))
         (pth3          (if (eq variant 'dark)  "#acb9b3"  "#2b777b" ))
-        (pth4          (if (eq variant 'dark)  "#b6d7b6"  "#54916d" ))
+        (pth4          (if (eq variant 'dark)  "#a1e8a1"  "#54916d" ))
         (pth5          (if (eq variant 'dark)  "#c3698a"  "#c75072" ))
         (pth6          (if (eq variant 'dark)  "#5c737c"  "#547580" ))
         (pth7          (if (eq variant 'dark)  "#a8938c"  "#927c5e" ))
@@ -457,7 +457,7 @@
 
 ;;;;; neotree
      `(neo-dir-link-face ((,class (:foreground ,inf :weight bold))))
-     `(neo-expand-btn-face ((,class (:foreground ,base))))
+     `(neo-expand-btn-face ((,class (:foreground ,bg4))))
      `(neo-file-link-face ((,class (:foreground ,base))))
      `(neo-root-dir-face ((,class (:foreground ,func :weight bold))))
 
