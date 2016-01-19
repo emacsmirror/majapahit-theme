@@ -107,7 +107,7 @@
         (cyan          (if (eq variant 'dark)  (if (display-graphic-p) "#9c836b" "color-137")  (if (display-graphic-p) "#6b6254" "color-180")))
         (violet        (if (eq variant 'dark)  "#7d6f6a"  "#685672" ))
         (red           (if (eq variant 'dark)  "#c5617a"  "#d25f7e" ))
-        (active1       (if (eq variant 'dark)  (if (display-graphic-p) "#3c352f" "color-238")  (if (display-graphic-p) "#f2edcc" "color-254") ))
+        (active1       (if (eq variant 'dark)  (if (display-graphic-p) "#3c352f" "color-238")  (if (display-graphic-p) "#fffbed" "color-254") ))
         (active2       (if (eq variant 'dark)  (if (display-graphic-p) "#5d5147" "color-241") (if (display-graphic-p) "#ada790" "color-180")))
         (inactive      (if (eq variant 'dark)  "#756456"  "#d4ceb8" ))
         (m-line-brdr   (if (eq variant 'dark)  (if (display-graphic-p) "#939080" "color-246")  (if (display-graphic-p) "#cae8e8" "color-152") ))
