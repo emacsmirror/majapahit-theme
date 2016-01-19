@@ -116,7 +116,7 @@
         (org-h2-bg     (if (eq variant 'dark)  "#6d6055"  "#e0ddce" ))
         (org-h3-bg     (if (eq variant 'dark)  "#736559"  "#f2eddc" ))
         (org-h4-bg     (if (eq variant 'dark)  "#857567"  "#f6f1e1" ))
-        (highlight     (if (eq variant 'dark)  (if (display-graphic-p) "#1c1815" "color-233")  (if (display-graphic-p) "#f2edcc" "color-254") ))
+        (highlight     (if (eq variant 'dark)  (if (display-graphic-p) "#1c1815" "color-233")  (if (display-graphic-p) "#f7f5e9" "color-254") ))
         (green-bg      (if (eq variant 'dark)  "#7b894f"  "#d5e2cd" ))
         (red-bg        (if (eq variant 'dark)  "#512e31"  "#e3c8cc" ))
         (mkwd          (if (eq variant 'dark)  (if (display-graphic-p) "#e78f7c" "color-180")  (if (display-graphic-p) "#6b6360" "color-145") ))
