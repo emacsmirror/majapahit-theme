@@ -174,7 +174,7 @@
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
      `(highlight ((,class (:foreground ,base :background ,(if (eq variant 'dark) highlight bg2)))))
      `(hl-line ((,class (:background ,(if (eq variant 'dark) highlight bg2)))))
-     `(isearch ((,class (:bold t :foreground ,base :background ,key2))))
+     `(isearch ((,class (:bold t :foreground ,bg1 :background ,key2))))
      `(lazy-highlight ((,class (:foreground ,base :background ,bg1 :weight normal))))
      `(link ((,class (:foreground ,inf :underline t))))
      `(link-visited ((,class (:foreground ,keyword :underline t))))
@@ -560,7 +560,7 @@
      `(popup-tip-face ((,class (:background ,red :foreground ,base))))
      `(popup-scroll-bar-foreground-face ((,class (:background ,type))))
      `(popup-scroll-bar-background-face ((,class (:background ,active1))))
-     `(popup-isearch-match ((,class (:background ,active1 :foreground ,red :bold t))))
+     `(popup-isearch-match ((,class (:background ,active1 :foreground ,bg1 :bold t))))
      `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
 
 ;;;;; whitespace-mode
