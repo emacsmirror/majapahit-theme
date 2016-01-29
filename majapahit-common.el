@@ -79,7 +79,7 @@
 (defun create-majapahit-theme (variant theme-name)
   (let ((class '((class color) (min-colors 89))) ;;
         ;;                                      DARK        LIGHT
-        (base          (if (eq variant 'dark)  (if (display-graphic-p) "#edd6c0" "color-231")  (if (display-graphic-p) "#4d5452" "color-238")))
+        (base          (if (eq variant 'dark)  (if (display-graphic-p) "#e8e2d1" "color-231")  (if (display-graphic-p) "#4d5452" "color-238")))
         (cursor        (if (eq variant 'dark)  "#917154"  (if (display-graphic-p) "#806c5b" "color-180") ))
         (bg1           (if (eq variant 'dark)  (if (display-graphic-p) "#241f1b" "color-235")  (if (display-graphic-p) "#fdf9ea" "color-231")))
         (bg2           (if (eq variant 'dark)  (if (display-graphic-p) "#3c352f" "color-237")  (if (display-graphic-p) "#f7f3e5" "color-255")))
@@ -88,7 +88,7 @@
         (key1          (if (eq variant 'dark)  (if (display-graphic-p) "#d66f84" "color-168")  (if (display-graphic-p) "#b34d6c" "color-168")))
         (key2          (if (eq variant 'dark)  (if (display-graphic-p) "#d4b292" "color-163")  (if (display-graphic-p) "#7d7470" "#777282")))
         (builtin       (if (eq variant 'dark)  (if (display-graphic-p) "#9c8772" "color-137") (if (display-graphic-p) "#806c5b" "color-137")))
-        (keyword       (if (eq variant 'dark)  (if (display-graphic-p) "#d16b7e" "color-204")  (if (display-graphic-p) "#c45c7b" "color-168")))
+        (keyword       (if (eq variant 'dark)  (if (display-graphic-p) "#d4576f" "color-204")  (if (display-graphic-p) "#c45c7b" "color-168")))
         (const         (if (eq variant 'dark)  (if (display-graphic-p) "#d49a8a" "color-172")  (if (display-graphic-p) "#ae6a56" "color-172")))
         (comment       (if (eq variant 'dark)  (if (display-graphic-p) "#707070" "color-144")  (if (display-graphic-p) "#979987" "color-144")))
         (comment-bg    (if (eq variant 'dark)  (if (display-graphic-p) "#241f1b" "color-235")  (if (display-graphic-p) "#fdf9ea" "color-231")))
