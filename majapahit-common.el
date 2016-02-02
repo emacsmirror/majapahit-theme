@@ -174,7 +174,8 @@
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
      `(highlight ((,class (:foreground ,base :background ,(if (eq variant 'dark) highlight bg2)))))
      `(hl-line ((,class (:background ,(if (eq variant 'dark) highlight bg2)))))
-     `(isearch ((,class (:bold t :foreground ,bg1 :background ,key2))))
+     `(isearch ((,class (:bold t :foreground ,bg1 :background ,green))))
+     `(isearch-fail ((,class (:foreground ,bg1 :background ,red-bg))))
      `(lazy-highlight ((,class (:foreground ,base :background ,bg1 :weight normal))))
      `(link ((,class (:foreground ,inf :underline t))))
      `(link-visited ((,class (:foreground ,keyword :underline t))))
@@ -218,6 +219,18 @@
      `(font-latex-subscript-face ((,class (:height ,majapahit-theme-tex-height-90))))
      `(font-latex-superscript-face ((,class (:height ,majapahit-theme-tex-height-90))))
      `(font-latex-warning-face ((,class (:inherit bold :foreground ,war :underline t))))
+
+;;;;; android mode
+     `(android-mode-debug-face ((,class (:foreground ,green))))
+     `(android-mode-error-face ((,class (:foreground ,yellow :weight bold))))
+     `(android-mode-info-face ((,class (:foreground ,base))))
+     `(android-mode-verbose-face ((,class (:foreground ,bg4))))
+     `(android-mode-warning-face ((,class (:foreground ,war))))
+
+;;;;; avy-mode
+     `(avy-lead-face ((,class (:inherit isearch))))
+     `(avy-lead-face-0 ((,class (:foreground ,key2 :background ,violet))))
+     `(avy-lead-face-2 ((,class (:inherit isearch :background ,mkwd))))
 
 ;;;;; company
      `(company-echo-common ((,class (:background ,bg1 :foreground ,base))))
