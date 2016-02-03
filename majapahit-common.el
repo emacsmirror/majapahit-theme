@@ -88,11 +88,11 @@
         (key1          (if (eq variant 'dark)  (if (display-graphic-p) "#d66f84" "color-168")  (if (display-graphic-p) "#b34d6c" "color-168")))
         (key2          (if (eq variant 'dark)  (if (display-graphic-p) "#d4b292" "color-163")  (if (display-graphic-p) "#7d7470" "#777282")))
         (builtin       (if (eq variant 'dark)  (if (display-graphic-p) "#9c8772" "color-137") (if (display-graphic-p) "#806c5b" "color-137")))
-        (keyword       (if (eq variant 'dark)  (if (display-graphic-p) "#d16b7e" "color-204")  (if (display-graphic-p) "#c45c7b" "color-168")))
+        (keyword       (if (eq variant 'dark)  (if (display-graphic-p) "#c75678" "color-204")  (if (display-graphic-p) "#c45c7b" "color-168")))
         (const         (if (eq variant 'dark)  (if (display-graphic-p) "#d49a8a" "color-172")  (if (display-graphic-p) "#ae6a56" "color-172")))
         (comment       (if (eq variant 'dark)  (if (display-graphic-p) "#707070" "color-144")  (if (display-graphic-p) "#979987" "color-144")))
         (comment-bg    (if (eq variant 'dark)  (if (display-graphic-p) "#29241f" "color-235")  (if (display-graphic-p) "#fdf9ea" "color-231")))
-        (func          (if (eq variant 'dark)  (if (display-graphic-p) "#989584" "color-187")  (if (display-graphic-p) "#777e62" "color-65") ))
+        (func          (if (eq variant 'dark)  (if (display-graphic-p) "#a18a74" "color-187")  (if (display-graphic-p) "#777e62" "color-65") ))
         (str           (if (eq variant 'dark)  (if (display-graphic-p) "#b18a69" "color-180")  (if (display-graphic-p) "#6b6254" "color-137") ))
         (type          (if (eq variant 'dark)  (if (display-graphic-p) "#94b1a3" "color-109")  (if (display-graphic-p) "#4d6e66" "color-67")))
         (comp          (if (eq variant 'dark)  (if (display-graphic-p) "#e47376" "color-210") (if (display-graphic-p) "#db4764" "color-210")))
@@ -248,6 +248,13 @@
      ;;`(company-tooltip-search ((,class (:inherit match))))
      `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) highlight bg2) :foreground ,const :bold t))))
 
+;;;;; cscope
+     `(cscope-file-face ((,class (:foreground ,green :weight bold))))
+     `(cscope-function-face ((,class (:foreground ,inf))))
+     `(cscope-line-number-face ((,class (:foreground ,yellow))))
+     `(cscope-line-face ((,class (:foreground ,base))))
+     `(cscope-mouse-face ((,class (:background ,type :foreground ,base))))
+
 ;;;;; diff
      `(diff-added             ((,class :background nil :foreground ,green)))
      `(diff-changed           ((,class :background nil :foreground ,inf)))
@@ -319,6 +326,9 @@
      `(eshell-ls-symlink ((,class (:foreground ,cyan :weight bold))))
      `(eshell-ls-unreadable ((,class (:foreground ,base))))
      `(eshell-prompt ((,class (:foreground ,keyword :weight bold))))
+
+;;;;; evil-search-highlight-persist
+     `(evil-search-highlight-persist-highlight-face ((,class (:background ,type :foreground ,base))))
 
 ;;;;; flycheck
      `(flycheck-error
