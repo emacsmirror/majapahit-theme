@@ -77,8 +77,8 @@
   :group 'majapahit-theme)
 
 (defun create-majapahit-theme (variant theme-name)
-  (let ((class '((class color) (min-colors 89))) ;;
-        ;;                                      DARK        LIGHT
+  (let ((class '((class color) (min-colors 257))) ;;
+        ;;                                        DARK      LIGHT
         (base          (if (eq variant 'dark)   "#E8E2D1" "#60585E" ))
         (base2         (if (eq variant 'dark)   "#5D5147" "#ADA190" ))
         (cursor        (if (eq variant 'dark)   "#917154" "#806C5B" ))
@@ -126,6 +126,57 @@
         (pth6          (if (eq variant 'dark)   "#5c737c" "#547580" ))
         (pth7          (if (eq variant 'dark)   "#a8938c" "#927c5e" ))
         (pth8          (if (eq variant 'dark)   "#898779" "#478cdb" ))
+
+        (t-class '((class color) (min-colors 89)))
+        ;;                                         DARK      LIGHT
+        (t-base          (if (eq variant 'dark)   "#E8E2D1" "#60585E" ))
+        (t-base2         (if (eq variant 'dark)   "#5D5147" "#ADA190" ))
+        (t-cursor        (if (eq variant 'dark)   "#917154" "#806C5B" ))
+        (t-bg1           (if (eq variant 'dark)   "#241F1B" "#FDF9EA" ))
+        (t-bg2           (if (eq variant 'dark)   "#3C352F" "#F7F3E5" ))
+        (t-bg3           (if (eq variant 'dark)   "#4D433A" "#E0DDCE" ))
+        (t-bg4           (if (eq variant 'dark)   "#756456" "#ADA790" ))
+        (t-key1          (if (eq variant 'dark)   "#D66F84" "#B34D6C" ))
+        (t-key2          (if (eq variant 'dark)   "#D4B292" "#7D7470" ))
+        (t-builtin       (if (eq variant 'dark)   "#9C8772" "#806C5B" ))
+        (t-keyword       (if (eq variant 'dark)   "#D4576F" "#C45C7B" ))
+        (t-const         (if (eq variant 'dark)   "#D49A8A" "#AE6A56" ))
+        (t-comment       (if (eq variant 'dark)   "#707070" "#979987" ))
+        (t-func          (if (eq variant 'dark)   "#989584" "#777E62" ))
+        (t-str           (if (eq variant 'dark)   "#B18A69" "#6B6254" ))
+        (t-type          (if (eq variant 'dark)   "#94b1a3" "#4d6e66" ))
+        (t-comp          (if (eq variant 'dark)   "#e47376" "#db4764" ))
+        (t-var           (if (eq variant 'dark)   "#8ea8a2" "#759494" ))
+        (t-err           (if (eq variant 'dark)   "#8e6a60" "#f1847b" ))
+        (t-war           (if (eq variant 'dark)   "#e78f7c" "#c07d3c" ))
+        (t-inf           (if (eq variant 'dark)   "#81998e" "#7ca194" ))
+        (t-interop       (if (eq variant 'dark)   "#7d6f6a" "#807b8b" ))
+        (t-suc           (if (eq variant 'dark)   "#bdc79e" "#96a374" ))
+        (t-green         (if (eq variant 'dark)   "#b9c398" "#777e62" ))
+        (t-yellow        (if (eq variant 'dark)   "#cc816b" "#d7875f" ))
+        (t-cyan          (if (eq variant 'dark)   "#9c8772" "#6b6254" ))
+        (t-violet        (if (eq variant 'dark)   "#7d6f6a" "#685672" ))
+        (t-red           (if (eq variant 'dark)   "#c5617a" "#d25f7e" ))
+        (t-inactive      (if (eq variant 'dark)   "#756456" "#d4ceb8" ))
+        (t-m-line-brdr   (if (eq variant 'dark)   "#939080" "#cae8e8" ))
+        (t-org-block-bg  (if (eq variant 'dark)   "#282523" "#d9e6dd" ))
+        (t-org-h1-bg     (if (eq variant 'dark)   "#302a24" "#f0ecde" ))
+        (t-org-h2-bg     (if (eq variant 'dark)   "#302a24" "#e0ddce" ))
+        (t-org-h3-bg     (if (eq variant 'dark)   "#302a24" "#f2eddc" ))
+        (t-org-h4-bg     (if (eq variant 'dark)   "#302a24" "#f6f1e1" ))
+        (t-highlight     (if (eq variant 'dark)   "#1c1815" "#f7f5e9" ))
+        (t-green-bg      (if (eq variant 'dark)   "#7b894f" "#d5e2cd" ))
+        (t-red-bg        (if (eq variant 'dark)   "#512e31" "#e3c8cc" ))
+        (t-mkwd          (if (eq variant 'dark)   "#e3a598" "#a3604d" ))
+        (t-pth1          (if (eq variant 'dark)   "#e19366" "#7d7f71" ))
+        (t-pth2          (if (eq variant 'dark)   "#fac087" "#a46c7f" ))
+        (t-pth3          (if (eq variant 'dark)   "#acb9b3" "#2b777b" ))
+        (t-pth4          (if (eq variant 'dark)   "#a1e8a1" "#54916d" ))
+        (t-pth5          (if (eq variant 'dark)   "#c3698a" "#c75072" ))
+        (t-pth6          (if (eq variant 'dark)   "#5c737c" "#547580" ))
+        (t-pth7          (if (eq variant 'dark)   "#a8938c" "#927c5e" ))
+        (t-pth8          (if (eq variant 'dark)   "#898779" "#478cdb" ))
+
         ;; for variable pitch
         (mjp-variable-pitch (if majapahit-theme-variable-pitch 'variable-pitch 'default))
         )
@@ -388,8 +439,8 @@
      `(helm-visible-mark ((,class (:foreground ,bg1 :background ,green))))
 
 ;;;;; helm-swoop
-     `(helm-swoop-target-line-block-face ((,class (:foreground ,base :background ,highlight))))
-     `(helm-swoop-target-line-face ((,class (:foreground ,base :background ,highlight))))
+     `(helm-swoop-target-line-block-face ((,class (:foreground ,base :background ,green-bg))))
+     `(helm-swoop-target-line-face ((,class (:foreground ,base :background ,green-bg))))
      `(helm-swoop-target-word-face ((,class (:foreground ,bg1 :background ,suc))))
 
 ;;;;; ido
@@ -397,6 +448,24 @@
      `(ido-only-match ((,class (:foreground ,(if (eq variant 'dark) suc red) :bold t))))
      `(ido-subdir ((,class (:foreground ,cyan))))
      `(ido-vertical-match-face ((,class (:foreground ,base :underline nil))))
+
+;;;;; ivy
+     `(ivy-confirm-face                          ((,class (:foreground ,green))
+                                                  (,t-class (:foreground ,t-green))))
+     `(ivy-current-match                         ((,class (:foreground ,base :background ,green-bg))
+                                                  (,t-class (:foreground ,base :background ,t-green-bg))))
+     `(ivy-match-required-face                   ((,class (:foreground ,cyan))
+                                                  (,t-class (:foreground ,cyan))))
+     `(ivy-minibuffer-match-face-1               ((,class (:foreground ,base2))
+                                                  (,t-class (:foreground ,t-base2))))
+     `(ivy-minibuffer-match-face-2               ((,class (:foreground ,keyword))
+                                                  (,t-class (:foreground ,t-keyword))))
+     `(ivy-minibuffer-match-face-3               ((,class (:foreground ,type))
+                                                  (,t-class (:foreground ,type))))
+     `(ivy-minibuffer-match-face-4               ((,class (:foreground ,key1))
+                                                  (,t-class (:foreground ,t-key1))))
+     `(ivy-remote                                ((,class (:foreground ,yellow))
+                                                  (,t-class (:foreground ,t-yellow))))
 
 ;;;;; info
      `(info-header-xref ((,class (:foreground ,func :underline t))))
