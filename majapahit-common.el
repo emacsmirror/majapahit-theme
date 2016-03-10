@@ -1086,7 +1086,7 @@
 
 ;;;;; smartparens
      `(sp-pair-overlay-face                      ((,class (:background ,(if (eq variant 'dark) bg2 highlight) :foreground nil))
-                                                  (,t-class (:background ,(if (eq variant 'dark) t-bg2 t-hightlight) :foreground nil))))
+                                                  (,t-class (:background ,(if (eq variant 'dark) t-bg2 t-highlight) :foreground nil))))
      `(sp-show-pair-match-face                   ((,class (:foreground ,(if (eq variant 'dark) suc red) :weight bold :underline t))
                                                   (,t-class (:foreground ,(if (eq variant 'dark) t-suc t-red) :weight bold underline t))))
 
