@@ -1,10 +1,10 @@
 ;;; majapahit-theme.el --- majapahit for Emacs.
 
-;; Copyright (C) 2015 Alexander Adhyatma
+;; Copyright (C) 2015-2016 Alexander Adhyatma
 
 ;; Author: Alexander Adhyatma
 ;; URL: http:/gitlab.com/franksn/majapahit-theme/
-;; Version: 0.3.0
+;; Version: 1.0.0
 ;;
 ;; This file is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

@@ -1,10 +1,10 @@
 ;;; majapahit-theme.el --- majapahit for Emacs.
 
-;; Copyright (C) 2015 Alexander F. Adhyatma
+;; Copyright (C) 2015-2016 Alexander F. Adhyatma
 
 ;; Author: Alexander F. Adhyatma
 ;; URL: http:/gitlab.com/franksn/majapahit-theme/
-;; Version: 0.3.0
+;; Version: 1.0.0
 ;;
 ;; This file is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -252,8 +252,8 @@
                                                         (,t-class (:inherit ,font-lock-function-name-face))))
 
 ;;;;; basic stuffs
-     `(fringe                                          ((,class (:background ,bg1 :foreground ,base))
-                                                        (,t-class (:background ,t-bg1 :foreground ,t-base))))
+     `(fringe                                          ((,class (:background ,highlight :foreground ,base))
+                                                        (,t-class (:background ,t-highlight :foreground ,t-base))))
      `(hl-line                                         ((,class (:background ,(if (eq variant 'dark) highlight bg2)))
                                                         (,t-class (:background ,(if (eq variant 'dark) t-highlight t-bg2)))))
      `(link                                            ((,class (:foreground ,inf :underline t))
@@ -270,7 +270,6 @@
                                                         (,t-class (:background ,t-highlight))))
      `(secondary-selection                             ((,class (:background ,bg3))
                                                         (,t-class (:background ,t-bg3))))
-     
      `(tooltip                                         ((,class (:background ,bg2 :foreground ,base :bold nil :italic nil :underline nil))
                                                         (,t-class (:background ,t-bg2 :foreground ,t-base :bold nil :italic nil :underline nil))))
      `(vertical-border                                 ((,class (:foreground ,bg4))
@@ -807,8 +806,8 @@
                                                   (,t-class (:underline ,t-keyword))))
 
 ;;;;; linum-mode
-     `(linum                                     ((,class (:foreground ,bg4 :background ,bg1))
-                                                  (,t-class (:foreground ,t-bg4 :background ,t-bg1))))
+     `(linum                                     ((,class (:foreground ,bg4 :background ,bg2))
+                                                  (,t-class (:foreground ,t-bg4 :background ,t-bg2))))
 
 ;;;;; Magit
      `(magit-blame-culprit                       ((,class (:foreground ,yellow))
