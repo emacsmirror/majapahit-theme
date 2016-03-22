@@ -364,6 +364,20 @@
      `(cider-test-success-face                         ((,class (:foreground ,suc :weight bold :underline t))
                                                         (,t-class (:foreground ,suc :weight bold :underline t))))
 
+     ;; circe
+     `(circe-prompt-face                               ((,class (:foreground ,keyword :weight bold :background nil))
+                                                        (,t-class (:foreground ,t-keyword :weight bold :background nil))))
+     `(circe-server-face                               ((,class (:foreground ,bg4))
+                                                        (,t-class (:foreground ,t-bg4))))
+     `(circe-highlight-nick-face                       ((,class (:foreground ,suc))
+                                                        (,t-class (:foreground ,t-suc))))
+     `(circe-topic-diff-new-face                       ((,class (:background ,green-bg :foreground ,base3))
+                                                        (,t-class (:background ,t-green-bg :foreground ,t-base3))))
+     `(circe-topic-diff-removed-face                   ((,class (:background ,red-bg :foreground ,base))
+                                                        (,t-class (:background ,t-red-bg :foreground ,t-base))))
+     `(circe-fool-face                                 ((,class (:foreground ,base2))
+                                                        (,t-class (:foreground ,t-base2))))
+
      ;; Company Mode
      `(company-echo                                    ((,class (:inherit company-echo-common))
                                                         (,t-class (:inherit company-echo-common))))
