@@ -79,9 +79,9 @@
 (defun create-majapahit-theme (variant theme-name)
   (let ((class '((class color) (min-colors 257))) ;;
         ;;                                        DARK      LIGHT
-        (base          (if (eq variant 'dark)   "#F2E6DA" "#444444" ))
+        (base          (if (eq variant 'dark)   "#E8DACC" "#444444" ))
         (base2         (if (eq variant 'dark)   "#5D5147" "#ADA190" ))
-        (base3         (if (eq variant 'dark)   "#D7D7AF" "#5FAF87" ))
+        (base3         (if (eq variant 'dark)   "#D7D9D0" "#5FAF87" ))
         (cursor        (if (eq variant 'dark)   "#917154" "#806C5B" ))
         (bg1           (if (eq variant 'dark)   "#1c1c1c" "#FFEFDB" ))
         (bg2           (if (eq variant 'dark)   "#262626" "#EEDFCC" ))
@@ -131,7 +131,7 @@
 
         (t-class '((class color) (min-colors 89)))
         ;;                                         DARK      LIGHT
-        (t-base          (if (eq variant 'dark)   "#FFD7AF" "#444444" ))
+        (t-base          (if (eq variant 'dark)   "#E4E4E4" "#444444" ))
         (t-base2         (if (eq variant 'dark)   "#5F5F5F" "#AFAF87" ))
         (t-base3         (if (eq variant 'dark)   "#D7D7AF" "#5F5F87" ))
         (t-cursor        (if (eq variant 'dark)   "#AF875F" "#875F5F" ))
