@@ -252,8 +252,8 @@
                                                         (,t-class (:inherit ,font-lock-function-name-face))))
 
 ;;;;; basic stuffs
-     `(fringe                                          ((,class (:background ,highlight :foreground ,base))
-                                                        (,t-class (:background ,t-highlight :foreground ,t-base))))
+     `(fringe                                          ((,class (:background ,(if (eq variant 'dark) highlight bg2) :foreground ,base))
+                                                        (,t-class (:background ,(if (eq variant 'dark) t-highlight t-bg2) :foreground ,t-base))))
      `(hl-line                                         ((,class (:background ,(if (eq variant 'dark) highlight bg2)))
                                                         (,t-class (:background ,(if (eq variant 'dark) t-highlight t-bg2)))))
      `(link                                            ((,class (:foreground ,inf :underline t))
@@ -1104,10 +1104,10 @@
                                                         (,t-class (:foreground ,bg4))))
 
 ;;;;; mode-line
-     `(mode-line                                 ((,class (:foreground ,bg4 :background ,highlight :box (:color ,m-line-brdr :line-width 1)))
-                                                  (,t-class (:foreground ,t-bg4 :background ,t-highlight :box (:color ,m-line-brdr :line-width 1)))))
-     `(mode-line-inactive                        ((,class (:foreground ,base2 :background ,bg2 :box (:color ,m-line-brdr :line-width 1)))
-                                                  (,t-class (:foreground ,t-base2 :background ,t-bg2 :box (:color ,t-m-line-brdr :line-width 1)))))
+     `(mode-line                                 ((,class (:foreground ,bg4 :background ,(if (eq variant 'dark) highlight bg2) :box (:color ,m-line-brdr :line-width 1)))
+                                                  (,t-class (:foreground ,t-bg4 :background ,(if (eq variant 'dark) t-highlight t-bg2) :box (:color ,m-line-brdr :line-width 1)))))
+     `(mode-line-inactive                        ((,class (:foreground ,base2 :background ,(if (eq variant 'dark) bg2 highlight) :box (:color ,m-line-brdr :line-width 1)))
+                                                  (,t-class (:foreground ,t-base2 :background ,(if (eq variant 'dark) t-bg2 t-highlight) :box (:color ,t-m-line-brdr :line-width 1)))))
      `(mode-line-buffer-id                       ((,class (:bold t :foreground ,keyword))
                                                   (,t-class (:bold t :foreground ,t-keyword))))
 
