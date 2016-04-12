@@ -252,8 +252,8 @@
                                                         (,t-class (:inherit ,font-lock-function-name-face))))
 
 ;;;;; basic stuffs
-     `(fringe                                          ((,class (:background ,(if (eq variant 'dark) highlight bg2) :foreground ,base))
-                                                        (,t-class (:background ,(if (eq variant 'dark) t-highlight t-bg2) :foreground ,t-base))))
+     `(fringe                                          ((,class (:background ,bg1 :foreground ,base))
+                                                        (,t-class (:background ,t-bg1 :foreground ,t-base))))
      `(hl-line                                         ((,class (:background ,(if (eq variant 'dark) bg2 bg2)))
                                                         (,t-class (:background ,(if (eq variant 'dark) bg2 t-bg2)))))
      `(link                                            ((,class (:foreground ,inf :underline t))
@@ -830,8 +830,8 @@
                                                   (,t-class (:underline ,t-keyword))))
 
 ;;;;; linum-mode
-     `(linum                                     ((,class (:foreground ,bg4 :background ,bg2))
-                                                  (,t-class (:foreground ,t-bg4 :background ,t-bg2))))
+     `(linum                                     ((,class (:foreground ,bg4 :background ,bg1))
+                                                  (,t-class (:foreground ,t-bg4 :background ,t-bg1))))
 ;;;;; lui
      `(lui-irc-colors-fg-1-face                  ((,class (:foreground ,bg3))
                                                   (,t-class (:foreground ,t-bg3))))
