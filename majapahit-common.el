@@ -1106,8 +1106,8 @@
 ;;;;; mode-line
      `(mode-line                                 ((,class (:foreground ,bg4 :background ,(if (eq variant 'dark) highlight bg2) :box nil))
                                                   (,t-class (:foreground ,t-bg4 :background ,(if (eq variant 'dark) t-highlight t-bg2) :box nil))))
-     `(mode-line-inactive                        ((,class (:foreground ,base2 :background ,(if (eq variant 'dark) bg2 highlight) :box nil))
-                                                  (,t-class (:foreground ,t-base2 :background ,(if (eq variant 'dark) t-bg2 t-highlight) :box nil))))
+     `(mode-line-inactive                        ((,class (:foreground ,base2 :background ,(if (eq variant 'dark) bg1 highlight) :box nil))
+                                                  (,t-class (:foreground ,t-base2 :background ,(if (eq variant 'dark) t-bg1 t-highlight) :box nil))))
      `(mode-line-buffer-id                       ((,class (:bold t :foreground ,keyword))
                                                   (,t-class (:bold t :foreground ,t-keyword))))
 
@@ -1210,14 +1210,14 @@
                                                   (,t-class (:bold t :foreground ,t-func))))
 
 ;;;;; powerline
-     `(powerline-bg2                             ((,class (:background ,base2 :foreground ,(if (eq variant 'dark) base bg1)))
-                                                  (,t-class (:background ,t-base2 :foreground ,(if (eq variant 'dark) t-base t-bg1)))))
-     `(powerline-base2                           ((,class (:background ,base2 :foreground ,(if (eq variant 'dark) base bg1)))
-                                                  (,t-class (:background ,t-base2 :foreground ,(if (eq variant 'dark) t-base t-bg1)))))
-     `(powerline-inbg2                           ((,class (:background ,bg2 :foreground ,base))
-                                                  (,t-class (:background ,t-bg2 :foreground ,t-base))))
-     `(powerline-inbase2                         ((,class (:background ,bg2 :foreground ,base))
-                                                  (,t-class (:background ,t-bg2 :foreground ,t-base))))
+     `(powerline-active1                         ((,class (:background ,bg1 :foreground ,(if (eq variant 'dark) base bg1) :inherit mode-line))
+                                                  (,t-class (:background ,t-bg1 :foreground ,(if (eq variant 'dark) t-base t-bg1) :inherit mode-line))))
+     `(powerline-active2                         ((,class (:background ,bg2 :foreground ,(if (eq variant 'dark) base bg1) :inherit mode-line))
+                                                  (,t-class (:background ,t-bg2 :foreground ,(if (eq variant 'dark) t-base t-bg1) :inherit mode-line))))
+     `(powerline-inactive1                       ((,class (:background ,bg2 :foreground ,base :inherit mode-line))
+                                                  (,t-class (:background ,t-bg2 :foreground ,t-base :inherit mode-line))))
+     `(powerline-inactive2                       ((,class (:background ,bg3 :foreground ,base :inherit mode-line))
+                                                  (,t-class (:background ,t-bg3 :foreground ,t-base :inherit mode-line))))
 
 ;;;;; rainbow-delimiters
      `(rainbow-delimiters-depth-1-face           ((,class :foreground ,pth1 :weight bold)
@@ -1258,6 +1258,20 @@
                                                   (,t-class (:background ,(if (eq variant 'dark) t-bg2 t-highlight) :foreground nil))))
      `(sp-show-pair-match-face                   ((,class (:foreground ,(if (eq variant 'dark) suc red) :weight bold :underline t))
                                                   (,t-class (:foreground ,(if (eq variant 'dark) t-suc t-red) :weight bold underline t))))
+
+     ;; spaceline
+     `(spaceline-evil-emacs                      ((,class (:background ,type :foreground ,base :inherit mode-line))
+                                                  (,t-class (:background ,t-type :foreground ,t-base :inherit mode-line))))
+     `(spaceline-evil-insert                     ((,class (:background ,green :foreground ,base :inherit mode-line))
+                                                  (,t-class (:background ,t-green :foreground ,t-base :inherit mode-line))))
+     `(spaceline-evil-motion                     ((,class (:background ,keyword :foreground ,base :inherit mode-line))
+                                                  (,t-class (:background ,t-keyword :foreground ,t-base :inherit mode-line))))
+     `(spaceline-evil-normal                     ((,class (:background ,cyan :foreground ,base :inherit mode-line))
+                                                  (,t-class (:background ,t-cyan :foreground ,t-base :inherit mode-line))))
+     `(spaceline-evil-replace                    ((,class (:background ,mkwd :foreground ,base :inherit mode-line))
+                                                  (,t-class (:background ,t-mkwd :foreground ,t-base :inherit mode-line))))
+     `(spaceline-highlight-face                  ((,class (:background ,str :foreground ,base :inherit mode-line))
+                                                  (,t-class (:background ,t-str :foreground ,t-base :inherit mode-line))))
 
 ;;;;; swiper
      `(swiper-line-face                          ((,class (:background ,bg2))
