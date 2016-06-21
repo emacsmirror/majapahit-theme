@@ -176,10 +176,10 @@
         (t-pth2          (if (eq variant 'dark)   "#FFAF87" "#AF5F87" ))
         (t-pth3          (if (eq variant 'dark)   "#D7D7D7" "#008787" ))
         (t-pth4          (if (eq variant 'dark)   "#AFD7AF" "#5F875F" ))
-        (t-pth5          (if (eq variant 'dark)   "#FF875F" "#D7af5f" ))
+        (t-pth5          (if (eq variant 'dark)   "#FF875F" "#D7AF5F" ))
         (t-pth6          (if (eq variant 'dark)   "#5F8787" "#5F8787" ))
         (t-pth7          (if (eq variant 'dark)   "#AF875F" "#AFFFD7" ))
-        (t-pth8          (if (eq variant 'dark)   "#878787" "#5f87d7" ))
+        (t-pth8          (if (eq variant 'dark)   "#878787" "#5F87D7" ))
 
         ;; for variable pitch
         (mjp-variable-pitch (if majapahit-theme-variable-pitch 'variable-pitch 'default))
