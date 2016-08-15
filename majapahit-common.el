@@ -206,8 +206,8 @@
 
      `(font-lock-builtin-face                          ((,class (:foreground ,builtin))
                                                         (,t-class (:foreground ,t-builtin))))
-     `(font-lock-comment-face                          ((,class (:foreground ,comment :background ,(when majapahit-theme-bg1 bg1)))
-                                                        (,t-class (:foreground ,t-comment :background ,(when majapahit-theme-bg1 bg1)))))
+     `(font-lock-comment-face                          ((,class (:foreground ,comment :background ,(when majapahit-theme-bg1 bg1) :slant italic))
+                                                        (,t-class (:foreground ,t-comment :background ,(when majapahit-theme-bg1 bg1) :slant italic))))
      `(font-lock-constant-face                         ((,class (:foreground ,const))
                                                         (,t-class (:foreground ,t-const))))
      `(font-lock-doc-face                              ((,class (:foreground ,comment))
@@ -401,22 +401,24 @@
                                                         (,t-class (:foreground ,t-base3 :background ,t-bg2))))
      `(company-tooltip-common                          ((,class (:foreground ,base ))
                                                         (,t-class (:foreground ,t-base ))))
-     `(company-tooltip-annotation                      ((,class (:foreground ,green))
-                                                        (,t-class (:foreground ,t-green))))
-     `(company-tooltip-common-selection                ((,class (:foreground ,base :underline t))
-                                                        (,t-class (:foreground ,t-base :underline t))))
-     `(company-tooltip-mouse                           ((,class (:foreground ,bg1 :background ,blue-bg))
-                                                        (,t-class (:foreground ,t-bg1 :background ,t-blue-bg))))
-     `(company-tooltip-selection                       ((,class (:foreground ,keyword :background ,highlight))
-                                                        (,t-class (:foreground ,t-keyword :background ,t-highlight))))
+     `(company-tooltip-annotation                      ((,class (:foreground ,bg4))
+                                                        (,t-class (:foreground ,t-bg4))))
+     `(company-tooltip-annotation-selection            ((,class (:foreground ,base2 :background ,keyword))
+                                                        (,t-class (:foreground ,t-base2 :background ,t-keyword))))
+     `(company-tooltip-common-selection                ((,class (:foreground ,base :background ,keyword))
+                                                        (,t-class (:foreground ,t-base :background ,keyword))))
+     `(company-tooltip-mouse                           ((,class (:foreground ,bg1 :background ,red-bg))
+                                                        (,t-class (:foreground ,t-bg1 :background ,t-red-bg))))
+     `(company-tooltip-selection                       ((,class (:foreground ,base :background ,keyword))
+                                                        (,t-class (:foreground ,t-base :background ,t-keyword))))
 
      ;; Diffs
      `(diff-changed                              ((,class (:foreground ,base3 :background nil))
                                                   (,t-class (:foreground ,t-base3 :background nil))))
-     `(diff-added                                ((,class (:foreground ,green :background nil))
-                                                  (,t-class (:foreground ,t-green :background nil))))
-     `(diff-removed                              ((,class (:foreground ,red :background nil))
-                                                  (,t-class (:foreground ,t-red :background nil))))
+     `(diff-added                                ((,class (:foreground ,base :background ,green-bg))
+                                                  (,t-class (:foreground ,t-base :background ,t-green-bg))))
+     `(diff-removed                              ((,class (:foreground ,base :background ,red-bg))
+                                                  (,t-class (:foreground ,t-base :background ,t-red-bg))))
      `(diff-indicator-changed                    ((,class (:inherit diff-changed))
                                                   (,t-class (:inherit diff-changed))))
      `(diff-indicator-added                      ((,class (:inherit diff-added))
@@ -1066,22 +1068,40 @@
                                                   (,t-class (:foreground ,t-base))))
 
 ;;;; matches and isearch
-     `(match                                           ((,class (:background ,green-bg :foreground ,base :weight bold))
-                                                        (,t-class (:background ,t-green-bg :foreground ,t-base :weight bold))))
-     `(lazy-highlight                                  ((,class (:foreground ,base :background ,bg2 :weight normal))
-                                                        (,t-class (:foreground ,t-base :background ,t-bg2 :weight normal))))
-     `(highlight                                       ((,class (:foreground ,base :background ,(if (eq variant 'dark) highlight bg2)))
-                                                        (,t-class (:foreground ,t-base :background ,(if (eq variant 'dark) t-highlight t-bg2)))))
-     `(isearch                                         ((,class (:bold t :foreground ,(if (eq variant 'dark) base bg1) :background ,blue-bg))
-                                                        (,t-class (:bold t :foreground ,(if (eq variant 'dark) t-base t-bg1) :background ,t-blue-bg))))
-     `(isearch-fail                                    ((,class (:bold t :foreground ,base :background ,red-bg))
-                                                        (,t-class (:bold t :foreground ,t-base :background ,t-red-bg))))
-     `(show-paren-match-face                           ((,class (:background ,suc :foreground ,bg1))
-                                                        (,t-class (:background ,t-suc :foreground ,t-bg1))))
-     `(show-paren-mismatch                             ((,class (:background ,err :foreground ,base))
-                                                        (,t-class (:background ,t-err :foreground ,t-base))))
-     `(success                                         ((,class (:foreground ,bg1 :background ,suc))
-                                                        (,t-class (:foreground ,t-bg1 :background ,t-suc))))
+     `(match                                     ((,class (:background ,green-bg :foreground ,base :weight bold))
+                                                  (,t-class (:background ,t-green-bg :foreground ,t-base :weight bold))))
+     `(lazy-highlight                            ((,class (:foreground ,base :background ,bg2 :weight normal))
+                                                  (,t-class (:foreground ,t-base :background ,t-bg2 :weight normal))))
+     `(highlight                                 ((,class (:foreground ,base :background ,(if (eq variant 'dark) highlight bg2)))
+                                                  (,t-class (:foreground ,t-base :background ,(if (eq variant 'dark) t-highlight t-bg2)))))
+     `(isearch                                   ((,class (:bold t :foreground ,(if (eq variant 'dark) base bg1) :background ,blue-bg))
+                                                  (,t-class (:bold t :foreground ,(if (eq variant 'dark) t-base t-bg1) :background ,t-blue-bg))))
+     `(isearch-fail                              ((,class (:bold t :foreground ,base :background ,red-bg))
+                                                  (,t-class (:bold t :foreground ,t-base :background ,t-red-bg))))
+     `(show-paren-match-face                     ((,class (:background ,suc :foreground ,bg1))
+                                                  (,t-class (:background ,t-suc :foreground ,t-bg1))))
+     `(show-paren-mismatch                       ((,class (:background ,err :foreground ,base))
+                                                  (,t-class (:background ,t-err :foreground ,t-base))))
+     `(success                                   ((,class (:foreground ,bg1 :background ,suc))
+                                                  (,t-class (:foreground ,t-bg1 :background ,t-suc))))
+
+;;;;; messages faces
+     `(message-header-name                       ((,class (:foreground ,green))
+                                                  (,t-class (:foreground ,t-green))))
+     `(message-header-cc                         ((,class (:foreground ,yellow))
+                                                  (,t-class (:foreground ,t-yellow))))
+     `(message-header-other                      ((,class (:foreground ,keyword))
+                                                  (,t-class (:foreground ,t-keyword))))
+     `(message-header-subject                    ((,class (:foreground ,inf))
+                                                  (,t-class (:foreground ,t-inf))))
+     `(message-header-to                         ((,class (:foreground ,str))
+                                                  (,t-class (:foreground ,t-str))))
+     `(message-cited-text                        ((,class (:inherit font-lock-comment-face))
+                                                  (,t-class (:inherit font-lock-comment-face))))
+     `(message-separator                         ((,class (:foreground ,base3))
+                                                  (,t-class (:foreground ,t-base3))))
+
+
 
 ;;;;; mingus
      `(mingus-directory-face                           ((,class (:foreground ,t-inf))
@@ -1104,10 +1124,26 @@
                                                         (,t-class (:foreground ,bg4))))
 
 ;;;;; mode-line
-     `(mode-line                                 ((,class (:foreground ,bg4 :background ,(if (eq variant 'dark) highlight bg2) :box nil))
-                                                  (,t-class (:foreground ,t-bg4 :background ,(if (eq variant 'dark) t-highlight t-bg2) :box nil))))
-     `(mode-line-inactive                        ((,class (:foreground ,base2 :background ,(if (eq variant 'dark) bg1 highlight) :box nil))
-                                                  (,t-class (:foreground ,t-base2 :background ,(if (eq variant 'dark) t-bg1 t-highlight) :box nil))))
+     `(mode-line                                 ((,class (:foreground ,bg4
+                                                                       :background ,(if (eq variant 'dark) highlight bg2)
+                                                                       :height 0.9
+                                                                       :box (:line-width 4 :color
+                                                                                         ,(if (eq variant 'dark) highlight bg2))))
+                                                  (,t-class (:foreground ,t-bg4
+                                                                         :background ,(if (eq variant 'dark) t-highlight t-bg2)
+                                                                         :height 0.9
+                                                                         :box (:line-width 4 :color
+                                                                                           ,(if (eq variant 'dark) t-highlight t-bg2))))))
+     `(mode-line-inactive                        ((,class (:foreground ,base2
+                                                                       :background ,(if (eq variant 'dark) bg1 highlight)
+                                                                       :height 0.9
+                                                                       :box (:line-width 4 :color
+                                                                                         ,(if (eq variant 'dark) bg1 highlight))))
+                                                  (,t-class (:foreground ,t-base2
+                                                                         :background ,(if (eq variant 'dark) t-bg1 t-highlight)
+                                                                         :height 0.9
+                                                                         :box (:line-width 4 :color
+                                                                                           ,(if (eq variant 'dark) t-bg1 t-highlight))))))
      `(mode-line-buffer-id                       ((,class (:bold t :foreground ,keyword))
                                                   (,t-class (:bold t :foreground ,t-keyword))))
 
