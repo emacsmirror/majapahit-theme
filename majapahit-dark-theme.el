@@ -1,4 +1,4 @@
-;;; majapahit-theme.el --- majapahit for Emacs.
+;;; majapahit-dark-theme.el --- Dari variant of Majapahit theme
 
 ;; Copyright (C) 2015-2016 Alexander Adhyatma
 
@@ -21,7 +21,7 @@
 
 ;;; Commentary:
 ;;
-;; A colorscheme for emacs with light and dark variant of it.
+;; The dark variant of the Majapahit theme.
 ;;
 ;;; Installation:
 ;;
@@ -37,7 +37,7 @@
 ;;
 ;;; Code:
 
-(require 'majapahit-common)
+(require 'majapahit-themes)
 
 (deftheme majapahit-dark "majapahit theme, the dark version")
 

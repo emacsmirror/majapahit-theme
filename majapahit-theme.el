@@ -1,8 +1,8 @@
-;;; majapahit-light-theme.el --- Light variant of Majapahit theme
+;;; majapahit-theme.el --- Majapahit theme with two variants
 
-;; Copyright (C) 2015-2016 Alexander Adhyatma
+;; Copyright (C) 2015-2016 Alexander F. Adhyatma
 
-;; Author: Alexander Adhyatma
+;; Author: Alexander F. Adhyatma
 ;; URL: http:/gitlab.com/franksn/majapahit-theme/
 ;; Version: 1.0.0
 ;;
@@ -20,29 +20,23 @@
 ;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
+
+;; The Majapahit theme, which comes in two variants, a dark and a light
+;; one.
 ;;
-;; The light variant of the Majapahit theme.
-;;
-;;; Installation:
-;;
-;;   M-x package-install -> majapahit-theme
-;;
-;;   (load-theme 'majapahit-dark t)
-;;     or
-;;   (load-theme 'majapahit-light t)
-;;
-;;; Bugs
-;;
-;; report any bugs to franksn@openmailbox.org
-;;
+
+;;; Note:
+
+;; This package should be named `majapahit-themes' because it provides
+;; more than one theme.  But upstream calls it `majapahit-theme' and
+;; Melpa and Emacsmirror will continue to use that name as well, until
+;; it is fixed upstream.
+
+;; This file exists only so we can extract metadata from the (currently)
+;; expected place.
+
 ;;; Code:
 
-(require 'majapahit-themes)
+(provide 'majapahit-theme)
 
-(deftheme majapahit-light "majapahit theme, the light version")
-
-(create-majapahit-theme 'light 'majapahit-light)
-
-(provide-theme 'majapahit-light)
-
-;;; majapahit-light-theme.el ends here
+;;; majapahit-theme.el ends here

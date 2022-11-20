@@ -1,4 +1,4 @@
-;;; majapahit-theme.el --- majapahit for Emacs.
+;;; majapahit-themes.el --- Majapahit theme with two variants
 
 ;; Copyright (C) 2015-2016 Alexander F. Adhyatma
 
@@ -21,7 +21,8 @@
 
 ;;; Commentary:
 ;;
-;; A colorscheme for emacs with light and dark variant of it.
+;; The Majapahit theme, which comes in two variants, a dark and a light
+;; one.
 ;;
 ;;; Installation:
 ;;
@@ -1476,10 +1477,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide 'majapahit-common)
+(provide 'majapahit-themes)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; majapahit-common.el ends here
+;;; majapahit-themes.el ends here
